@@ -1,0 +1,17 @@
+<button
+  type="button"
+  [class.is-active]="language() === 'en'"
+  [attr.aria-pressed]="language() === 'en'"
+  (click)="selectLanguage('en')"
+>
+  EN
+</button>
+
+<button
+  type="button"
+  [class.is-active]="language() === 'de'"
+  [attr.aria-pressed]="language() === 'de'"
+  (click)="selectLanguage('de')"
+>
+  DE
+</button>

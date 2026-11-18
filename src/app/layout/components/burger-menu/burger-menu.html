@@ -1,0 +1,21 @@
+<svg
+  class="menu-button__icon"
+  xmlns="http://www.w3.org/2000/svg"
+  width="58"
+  height="53"
+  viewBox="0 0 58 53"
+  fill="none"
+  aria-hidden="true"
+  focusable="false"
+>
+  @for (line of lines(); track $index) {
+    <line
+      [attr.x1]="line[0]"
+      [attr.y1]="line[1]"
+      [attr.x2]="line[2]"
+      [attr.y2]="line[3]"
+      stroke="currentColor"
+      stroke-width="4"
+    />
+  }
+</svg>

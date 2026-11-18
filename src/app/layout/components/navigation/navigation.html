@@ -1,0 +1,59 @@
+<div
+  class="menu-overlay"
+  [class.is-opening]="menuPhase() === 'opening'"
+  [class.is-closing]="menuPhase() === 'closing'"
+>
+  <nav id="main-navigation" class="site-navigation" aria-label="Main navigation">
+    <div class="site-navigation__cream">
+      <div class="site-navigation__links">
+        <a #firstMenuLink href="#about" (click)="$event.preventDefault(); navigateTo('about')">
+          <span class="navigation-corner" aria-hidden="true"></span>
+          {{ language() === 'de' ? 'Über mich' : 'About me' }}
+        </a>
+
+        <a href="#skills" (click)="$event.preventDefault(); navigateTo('skills')">
+          <span class="navigation-corner" aria-hidden="true"></span>
+          {{ language() === 'de' ? 'Meine Fähigkeiten' : 'My skills' }}
+        </a>
+
+        <a href="#portfolio" (click)="$event.preventDefault(); navigateTo('portfolio')">
+          <span class="navigation-corner" aria-hidden="true"></span>
+          Portfolio
+        </a>
+      </div>
+    </div>
+
+    <div class="site-navigation__contact">
+      <div class="site-navigation__contact-inner">
+        <div class="site-navigation__contact-text">
+          <h2>Say hi!</h2>
+          <a href="mailto:sefan@gmail.com"> sefan@gmail.com </a>
+        </div>
+
+        <div class="site-navigation__socials">
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <img src="/icons/github.svg" alt="" />
+          </a>
+
+          <a href="mailto:sefan@gmail.com" aria-label="Email">
+            <img src="/icons/email.svg" alt="" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img src="/icons/linkedin.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

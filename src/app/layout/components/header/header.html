@@ -1,0 +1,41 @@
+<header #siteHeader class="site-header">
+  <div class="site-header__inner">
+    <a
+      class="site-logo"
+      href="#hero"
+      aria-label="Back to top"
+      (click)="$event.preventDefault(); navigateTo('hero')"
+    >
+      <img src="/icons/logo.svg" alt="SE Logo" width="67" height="30" />
+    </a>
+
+    <div class="site-header__actions">
+      <app-language-switch
+        class="language-switch"
+        aria-label="Language selection"
+        [language]="language()"
+        (languageChange)="setLanguage($event)"
+      />
+
+      <button
+        #menuToggle
+        class="menu-button"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-controls="main-navigation"
+        [attr.aria-expanded]="menuOpen()"
+        (click)="toggleMenu()"
+      >
+        <app-burger-menu [lines]="burgerLines()" />
+      </button>
+    </div>
+  </div>
+
+  @if (menuOpen()) {
+    <app-navigation
+      [language]="language()"
+      [menuPhase]="menuPhase()"
+      (navigate)="navigateTo($event)"
+    />
+  }
+</header>

@@ -1,3 +1,3 @@
 import type { EnvironmentProviders, Provider } from '@angular/core';
 
-export const coreProviders: Array<Provider | EnvironmentProviders> = [];
+export const coreProviders: (Provider | EnvironmentProviders)[] = [];

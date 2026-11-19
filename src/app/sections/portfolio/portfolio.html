@@ -1,0 +1,38 @@
+<section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+  <div class="portfolio__container">
+    <header class="portfolio__header">
+      <h2 class="portfolio__title" id="portfolio-title">
+        {{ title }}
+      </h2>
+
+      <p class="portfolio__description">
+        {{ description }}
+      </p>
+    </header>
+
+    <div class="portfolio__projects">
+      @for (project of projects; track project.id; let index = $index) {
+        <article class="portfolio__project" [attr.aria-labelledby]="'portfolio-project-' + index">
+          <h3 class="portfolio__project-name" [id]="'portfolio-project-' + index">
+            {{ project.title }}
+          </h3>
+
+          <div class="portfolio__image-wrapper">
+            <img
+              class="portfolio__image"
+              [src]="project.imageSrc"
+              [alt]="project.imageAlt"
+              width="620"
+              height="393"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="portfolio__date">
+            {{ project.completionDate }}
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

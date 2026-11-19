@@ -1,0 +1,35 @@
+<section class="references" id="references" aria-labelledby="references-title">
+  <div class="references__container">
+    <header class="references__header">
+      <h2 class="references__title" id="references-title">
+        {{ title }}
+      </h2>
+
+      <p class="references__description">
+        {{ description }}
+      </p>
+    </header>
+
+    <div class="references__grid">
+      @for (reference of references; track reference.id) {
+        <article class="references__card" [attr.aria-labelledby]="'reference-name-' + reference.id">
+          <div class="references__person">
+            <span class="references__quote-icon" aria-hidden="true"></span>
+
+            <h3 class="references__name" [id]="'reference-name-' + reference.id">
+              {{ reference.name }}
+            </h3>
+
+            <p class="references__role">
+              {{ reference.role }}
+            </p>
+          </div>
+
+          <blockquote class="references__quote">
+            <p>{{ reference.quote }}</p>
+          </blockquote>
+        </article>
+      }
+    </div>
+  </div>
+</section>

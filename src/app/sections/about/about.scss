@@ -1,0 +1,152 @@
+:host {
+  display: block;
+}
+
+.about {
+  width: 100%;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  scroll-margin-top: 92px;
+}
+
+.about__container {
+  width: calc(100% - 50px);
+  max-width: 1259px;
+  margin-inline: auto;
+  padding-block: 70px 90px;
+
+  background-image: radial-gradient(circle, rgba(224, 168, 132, 0.55) 1px, transparent 1.5px);
+  background-size: 104px 104px;
+}
+
+.about__title {
+  margin: 0 0 45px;
+  font-family: var(--font-heading);
+  font-size: clamp(45px, 7.2vw, 88px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+.about__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 443px);
+  align-items: start;
+  gap: clamp(35px, 5vw, 75px);
+}
+
+.about__content {
+  min-width: 0;
+}
+
+.about__description {
+  max-width: 560px;
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.about__description p {
+  margin: 0;
+}
+
+.about__details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 48px;
+}
+
+.about__detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 18px;
+}
+
+.about__detail svg {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 177px;
+  min-height: 57px;
+  margin: 40px auto 0;
+  border: 3px solid var(--color-text);
+  background: transparent;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 20px;
+  text-decoration: none;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
+}
+
+.about__button:hover {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
+.about__button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 5px;
+}
+
+.about__visual {
+  min-width: 0;
+}
+
+.about__portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .about__container {
+    padding-block: 60px 75px;
+    background-size: 70px 70px;
+  }
+
+  .about__title {
+    margin-bottom: 32px;
+    font-size: clamp(45px, 10vw, 68px);
+  }
+
+  .about__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+  }
+
+  .about__description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .about__details {
+    margin-top: 36px;
+  }
+
+  .about__detail {
+    font-size: 16px;
+  }
+
+  .about__button {
+    margin-top: 36px;
+  }
+
+  .about__portrait {
+    width: 100%;
+    max-width: 443px;
+    margin-inline: auto;
+  }
+}

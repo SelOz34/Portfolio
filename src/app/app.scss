@@ -4,33 +4,3 @@
   background: var(--color-background);
   color: var(--color-text);
 }
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: calc(100vh - 92px);
-  padding: 24px 0;
-  scroll-margin-top: 92px;
-}
-
-.hero__title {
-  margin: 0;
-  font-family: var(--font-heading);
-  font-size: clamp(45px, calc(14.17px + 7.905vw), 128px);
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -0.025em;
-  text-align: center;
-}
-
-.hero__title span {
-  display: block;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}

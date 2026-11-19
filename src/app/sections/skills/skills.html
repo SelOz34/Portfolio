@@ -1,0 +1,45 @@
+<section class="skills" id="skills" aria-labelledby="skills-title">
+  <div class="skills__container">
+    <div class="skills__frame">
+      <h2 class="skills__title" id="skills-title">My skills</h2>
+
+      <div class="skills__grid">
+        @for (skill of skills; track skill.name) {
+          <div class="skills__item">
+            <img
+              class="skills__icon"
+              [src]="skill.icon"
+              alt=""
+              width="72"
+              height="72"
+              loading="lazy"
+            />
+
+            <span class="skills__name">
+              {{ skill.name }}
+            </span>
+          </div>
+        }
+      </div>
+
+      <div class="skills__footer">
+        <img
+          class="skills__learning-icon"
+          [src]="learningIcon"
+          alt=""
+          width="64"
+          height="64"
+          loading="lazy"
+        />
+
+        <p class="skills__footer-text">
+          <span>Don’t see the skill you need?</span>
+
+          <a [href]="'mailto:' + contactEmail"> Contact me </a>
+
+          <span>I’m always ready to learn!</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

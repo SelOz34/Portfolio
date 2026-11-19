@@ -1,0 +1,250 @@
+:host {
+  display: block;
+}
+
+.references {
+  width: 100%;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  scroll-margin-top: 92px;
+}
+
+.references__container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 565px;
+  margin-inline: auto;
+  padding: 0 100px;
+  background-image: radial-gradient(circle, rgba(224, 168, 132, 0.45) 1px, transparent 1.5px);
+  background-size: 104px 104px;
+}
+
+.references__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 51px;
+  margin-bottom: 40px;
+}
+
+.references__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.references__description {
+  width: 100%;
+  max-width: 560px;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.references__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.references__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 344px;
+  min-width: 0;
+  padding: 24px 16px;
+  border: 4px solid var(--color-text);
+  background-color: transparent;
+  transition: border-color 180ms ease;
+}
+
+.references__person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.references__quote-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  flex-shrink: 0;
+  background-color: var(--color-text);
+
+  -webkit-mask-image: url('/icons/references/format_quote.svg');
+  mask-image: url('/icons/references/format_quote.svg');
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+
+  transition: background-color 180ms ease;
+}
+
+.references__name {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.references__role {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.references__quote {
+  width: 100%;
+  margin: 24px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.references__quote p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .references__card:hover {
+    border-color: var(--color-accent);
+  }
+
+  .references__card:hover .references__quote-icon {
+    background-color: var(--color-accent);
+  }
+}
+
+@media (max-width: 1200px) {
+  .references__container {
+    padding-inline: clamp(25px, 6.944vw, 100px);
+  }
+
+  .references__card {
+    height: auto;
+    min-height: 344px;
+  }
+
+  .references__quote p {
+    font-size: clamp(15px, 1.5vw, 18px);
+  }
+}
+
+@media (max-width: 900px) {
+  .references__container {
+    min-height: 0;
+    padding-bottom: 80px;
+  }
+
+  .references__header {
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .references__title {
+    font-size: clamp(48px, 7vw, 78px);
+  }
+
+  .references__description {
+    font-size: 18px;
+  }
+
+  .references__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .references__card {
+    min-height: 344px;
+  }
+}
+
+@media (max-width: 768px) {
+  .references__container {
+    padding: 60px 25px 80px;
+  }
+
+  .references__header {
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .references__title {
+    font-size: clamp(38px, 8vw, 58px);
+  }
+
+  .references__description {
+    max-width: 420px;
+    font-size: 16px;
+  }
+
+  .references__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .references__card {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .references__quote p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .references__container {
+    padding-inline: 20px;
+  }
+
+  .references__title {
+    font-size: clamp(34px, 9vw, 42px);
+  }
+
+  .references__card {
+    padding: 24px 16px;
+  }
+
+  .references__name {
+    font-size: 20px;
+  }
+
+  .references__quote p {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .references__card,
+  .references__quote-icon {
+    transition: none;
+  }
+}

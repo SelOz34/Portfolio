@@ -1,0 +1,164 @@
+:host {
+  display: block;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 92px);
+  padding: 24px 0;
+  overflow: hidden;
+  background-color: var(--color-background);
+  scroll-margin-top: 92px;
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(224, 168, 132, 0.55) 1px, transparent 1.5px);
+  background-size: 104px 104px;
+  background-position: center;
+  content: '';
+  pointer-events: none;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  width: max-content;
+  max-width: 100%;
+}
+
+.hero__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(45px, calc(14.17px + 7.905vw), 128px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+
+.hero__title span {
+  display: block;
+}
+
+.hero__signature {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+  margin-top: 12px;
+  padding-right: 24px;
+}
+
+.hero__signature-line {
+  flex: 1;
+  height: 3px;
+  background-color: var(--color-text);
+}
+
+.hero__name {
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: clamp(20px, 2.8vw, 40px);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.hero__email {
+  position: absolute;
+  bottom: 14%;
+  left: clamp(25px, 6.944vw, 100px);
+  z-index: 1;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 18px;
+  text-decoration: none;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.hero__scroll {
+  position: absolute;
+  right: clamp(25px, 6.944vw, 100px);
+  bottom: 13%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.1;
+  text-align: left;
+  text-decoration: none;
+}
+
+.hero__scroll img {
+  display: block;
+  width: 48px;
+  height: 84px;
+  object-fit: contain;
+}
+
+.hero__email:focus-visible,
+.hero__scroll:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 5px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: calc(100dvh - 92px);
+    padding: 40px 16px 120px;
+  }
+
+  .hero::before {
+    background-size: 70px 70px;
+  }
+
+  .hero__content {
+    width: 100%;
+  }
+
+  .hero__title {
+    font-size: clamp(45px, 8.9vw, 68px);
+  }
+
+  .hero__signature {
+    gap: 12px;
+    margin-top: 18px;
+    padding-right: 0;
+  }
+
+  .hero__signature-line {
+    height: 2px;
+  }
+
+  .hero__name {
+    font-size: clamp(18px, 4.2vw, 26px);
+  }
+
+  .hero__email {
+    bottom: 40px;
+    left: 25px;
+    font-size: 14px;
+  }
+
+  .hero__scroll {
+    right: 25px;
+    bottom: 40px;
+    gap: 4px;
+    font-size: 14px;
+  }
+
+  .hero__scroll img {
+    width: 32px;
+    height: 60px;
+  }
+}

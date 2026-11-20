@@ -2,11 +2,11 @@
   <div class="portfolio__container">
     <header class="portfolio__header">
       <h2 class="portfolio__title" id="portfolio-title">
-        {{ title }}
+        {{ 'portfolio.title' | translate }}
       </h2>
 
       <p class="portfolio__description">
-        {{ description }}
+        {{ 'portfolio.description' | translate }}
       </p>
     </header>
 
@@ -21,7 +21,7 @@
             <img
               class="portfolio__image"
               [src]="project.imageSrc"
-              [alt]="project.imageAlt"
+              [alt]="'portfolio.projects.' + project.id + '.imageAlt' | translate"
               width="620"
               height="393"
               loading="lazy"

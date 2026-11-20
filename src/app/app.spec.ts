@@ -1,24 +1,36 @@
 import { TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
+
 import { App } from './app';
+import { routes } from './app.routes';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [App],
-    })
-      .compileComponents();
+      providers: [provideRouter(routes)],
+    }).compileComponents();
   });
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(App);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+
+    expect(fixture.componentInstance).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should provide a router outlet', () => {
     const fixture = TestBed.createComponent(App);
-    await fixture.whenStable();
+    fixture.detectChanges();
+
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, portfolio');
+
+    expect(compiled.querySelector('router-outlet')).not.toBeNull();
+  });
+
+  it('should define the portfolio home route', () => {
+    const homeRoute = routes.find((route) => route.path === '');
+
+    expect(homeRoute).toBeDefined();
+    expect(homeRoute?.loadComponent).toBeDefined();
   });
 });

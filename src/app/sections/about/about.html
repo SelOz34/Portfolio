@@ -1,16 +1,13 @@
 <section class="about" id="about" aria-labelledby="about-title">
   <div class="about__container">
-    <h2 class="about__title" id="about-title">About me</h2>
+    <h2 class="about__title" id="about-title">
+      {{ 'about.title' | translate }}
+    </h2>
 
     <div class="about__layout">
       <div class="about__content">
         <div class="about__description">
-          <p>
-            Write some information about yourself that is IT related. Why are you passionate about
-            coding?Show a desire to learn new technologies Add a brief description of your
-            problem-solving approach. You can include some key traits like: analytical thinking,
-            creativity, persistence and collaboration.
-          </p>
+          <p>{{ 'about.description' | translate }}</p>
         </div>
 
         <div class="about__details">
@@ -29,7 +26,8 @@
               <path d="M13 28V18h6v10" />
               <path d="M3 7h7v7" />
             </svg>
-            <span>Based in Munich</span>
+
+            <span>{{ 'about.location' | translate }}</span>
           </div>
 
           <div class="about__detail">
@@ -45,18 +43,21 @@
               <rect x="3" y="4" width="26" height="20" />
               <path d="M1 28h30M12 24l-2 4m10-4 2 4" />
             </svg>
-            <span>Open to work Remote</span>
+
+            <span>{{ 'about.availability' | translate }}</span>
           </div>
         </div>
 
-        <a class="about__button" href="mailto:sefan@gmail.com"> Let’s talk </a>
+        <a class="about__button" href="mailto:sefan@gmail.com">
+          {{ 'about.button' | translate }}
+        </a>
       </div>
 
       <div class="about__visual">
         <img
           class="about__portrait"
           [src]="portraitPath"
-          alt="Portrait of Stefan Engel"
+          [alt]="'about.portraitAlt' | translate"
           loading="lazy"
         />
       </div>

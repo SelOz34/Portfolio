@@ -1,4 +1,6 @@
 import { Component, ElementRef, input, output, viewChild } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
+
 import type { Language } from '../language-switch/language-switch';
 
 export type NavigationTarget = 'about' | 'skills' | 'portfolio';
@@ -6,6 +8,7 @@ export type MenuPhase = 'closed' | 'opening' | 'open' | 'closing';
 
 @Component({
   selector: 'app-navigation',
+  imports: [TranslatePipe],
   templateUrl: './navigation.html',
   styleUrl: './navigation.scss',
 })

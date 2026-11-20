@@ -1,0 +1,160 @@
+// This page intentionally preserves the compact Figma legal-text hierarchy.
+:host {
+  display: block;
+}
+
+.legal {
+  min-height: 100dvh;
+  background: #fffcf3;
+  color: #000;
+  font-family: 'Overpass', sans-serif;
+}
+
+.legal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 92px;
+  padding: 20px clamp(25px, 6.944vw, 100px);
+}
+
+.legal__logo,
+.legal__logo img {
+  display: block;
+}
+
+.legal__logo img {
+  width: 67px;
+  height: 30px;
+}
+
+.legal__main {
+  width: calc(100% - 50px);
+  max-width: 920px;
+  margin-inline: auto;
+  padding: 50px 0 100px;
+}
+
+.legal__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  color: inherit;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.legal__back:hover,
+.legal__footer a:hover {
+  color: #00bc8f;
+}
+
+.legal__title {
+  margin: 0 0 46px;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(42px, 6vw, 78px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.legal__content {
+  width: 100%;
+  max-width: 780px;
+}
+
+.legal__section {
+  margin: 0 0 24px;
+}
+
+// Figma: section titles are the SAME size as paragraph text, only heavier.
+.legal__section h2,
+.legal__section p,
+.legal__list,
+.legal__closing,
+.legal__date {
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.legal__section h2 {
+  margin: 0 0 3px;
+  color: #00bc8f;
+  font-weight: 800;
+}
+
+.legal__section p {
+  margin: 0 0 14px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+}
+
+.legal__section p:last-child {
+  margin-bottom: 0;
+}
+
+.legal__list {
+  margin: 0;
+  padding-left: 19px;
+}
+
+.legal__accent {
+  color: #00bc8f;
+}
+
+.legal__closing {
+  margin: 24px 0 16px;
+}
+
+.legal__date {
+  margin: 0;
+}
+
+.legal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 32px clamp(25px, 6.944vw, 100px);
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+}
+
+.legal__footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.legal a:focus-visible {
+  outline: 2px solid #00bc8f;
+  outline-offset: 5px;
+}
+
+@media (max-width: 768px) {
+  .legal__header {
+    padding-inline: 25px;
+  }
+
+  .legal__main {
+    padding: 42px 0 80px;
+  }
+
+  .legal__title {
+    margin-bottom: 34px;
+  }
+
+  .legal__section {
+    margin-bottom: 22px;
+  }
+
+  .legal__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 25px;
+  }
+}

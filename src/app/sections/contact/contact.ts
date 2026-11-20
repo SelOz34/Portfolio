@@ -1,11 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 type ContactField = 'name' | 'email' | 'message';
 
 @Component({
   selector: 'app-contact',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -57,7 +59,7 @@ export class Contact {
   }
 
   protected get nameError(): string {
-    return this.touched.name && !this.nameValid ? 'Your name is required' : '';
+    return this.touched.name && !this.nameValid ? 'contact.errors.nameRequired' : '';
   }
 
   protected get emailError(): string {
@@ -65,15 +67,15 @@ export class Contact {
       return '';
     }
 
-    return this.email.trim() ? 'Please enter a valid email address' : 'Your email is required';
+    return this.email.trim() ? 'contact.errors.emailInvalid' : 'contact.errors.emailRequired';
   }
 
   protected get messageError(): string {
-    return this.touched.message && !this.messageValid ? 'Your message is empty' : '';
+    return this.touched.message && !this.messageValid ? 'contact.errors.messageRequired' : '';
   }
 
   protected get privacyError(): string {
-    return this.privacyTouched && !this.privacyAccepted ? 'Please accept the privacy policy.' : '';
+    return this.privacyTouched && !this.privacyAccepted ? 'contact.errors.privacyRequired' : '';
   }
 
   protected onSubmit(): void {
@@ -81,7 +83,7 @@ export class Contact {
       return;
     }
 
-    this.submissionNotice = 'Message sending is not available yet. Your message has not been sent.';
+    this.submissionNotice = 'contact.submissionUnavailable';
   }
 
   protected scrollToTop(): void {

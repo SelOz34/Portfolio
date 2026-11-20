@@ -8,17 +8,17 @@
       <div class="site-navigation__links">
         <a #firstMenuLink href="#about" (click)="$event.preventDefault(); navigateTo('about')">
           <span class="navigation-corner" aria-hidden="true"></span>
-          {{ language() === 'de' ? 'Über mich' : 'About me' }}
+          {{ 'navigation.about' | translate }}
         </a>
 
         <a href="#skills" (click)="$event.preventDefault(); navigateTo('skills')">
           <span class="navigation-corner" aria-hidden="true"></span>
-          {{ language() === 'de' ? 'Meine Fähigkeiten' : 'My skills' }}
+          {{ 'navigation.skills' | translate }}
         </a>
 
         <a href="#portfolio" (click)="$event.preventDefault(); navigateTo('portfolio')">
           <span class="navigation-corner" aria-hidden="true"></span>
-          Portfolio
+          {{ 'navigation.portfolio' | translate }}
         </a>
       </div>
     </div>
@@ -32,7 +32,7 @@
 
         <div class="site-navigation__socials">
           <a
-            href="https://github.com/"
+            href="https://github.com/SelOz34"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"

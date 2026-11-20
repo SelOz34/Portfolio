@@ -1,0 +1,173 @@
+{
+    "navigation":  {
+                       "about":  "About me",
+                       "skills":  "My skills",
+                       "portfolio":  "Portfolio",
+                       "contact":  "Contact"
+                   },
+    "common":  {
+                   "backToTop":  "Back to top",
+                   "legalNotice":  "Legal notice",
+                   "privacyPolicy":  "Privacy policy"
+               },
+    "hero":  {
+                 "titleFirst":  "Frontend",
+                 "titleSecond":  "Developer",
+                 "emailLabel":  "Send email to Stefan Engel",
+                 "scrollLabel":  "Scroll down to About me",
+                 "scrollFirst":  "Scroll",
+                 "scrollSecond":  "Down"
+             },
+    "about":  {
+                  "title":  "About me",
+                  "description":  "Write some information about yourself that is IT related. Why are you passionate about coding?Show a desire to learn new technologies Add a brief description of your problem-solving approach. You can include some key traits like: analytical thinking, creativity, persistence and collaboration.",
+                  "location":  "Based in Munich",
+                  "availability":  "Open to work Remote",
+                  "button":  "Let’s talk",
+                  "portraitAlt":  "Portrait of Stefan Engel"
+              },
+    "skills":  {
+                   "title":  "My skills",
+                   "footerQuestion":  "Don’t see the skill you need?",
+                   "contactButton":  "Contact me",
+                   "footerLearning":  "I’m always ready to learn!"
+               },
+    "portfolio":  {
+                      "title":  "Portfolio",
+                      "description":  "Explore a selection of my work here - Interact with projects to see my skills in action.",
+                      "projects":  {
+                                       "pokedex":  {
+                                                       "imageAlt":  "Preview of the Pokedex project"
+                                                   },
+                                       "pollo-loco":  {
+                                                          "imageAlt":  "Preview of the Pollo Loco project"
+                                                      },
+                                       "join":  {
+                                                    "imageAlt":  "Preview of the Join project"
+                                                }
+                                   }
+                  },
+    "references":  {
+                       "title":  "References",
+                       "description":  "I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.",
+                       "openDetails":  "Read full reference",
+                       "closeDetails":  "Close reference",
+                       "items":  {
+                                     "v-schuster":  {
+                                                        "role":  "Team Partner",
+                                                        "quote":  "Michael really kept the team together with his great organization and clear communication. We wouldn\u0027t have got this far without his commitment."
+                                                    },
+                                     "e-eichinger":  {
+                                                         "role":  "Team Partner",
+                                                         "quote":  "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals."
+                                                     },
+                                     "i-nuber":  {
+                                                     "role":  "Frontend Engineer",
+                                                     "quote":  "It was a great pleasure to work with Michael. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well."
+                                                 }
+                                 }
+                   },
+    "contact":  {
+                    "title":  "Say Hi!",
+                    "introTitle":  "Want to discuss a new project?",
+                    "introText":  "Say hello! let\u0027s discuss your ideas and make it happen",
+                    "nameLabel":  "Your name",
+                    "emailLabel":  "Your email",
+                    "messageLabel":  "Your message",
+                    "errors":  {
+                                   "nameRequired":  "Your name is required",
+                                   "emailInvalid":  "Please enter a valid email address",
+                                   "emailRequired":  "Your email is required",
+                                   "messageRequired":  "Your message is empty",
+                                   "privacyRequired":  "Please accept the privacy policy."
+                               },
+                    "privacyBefore":  "I\u0027ve read the ",
+                    "privacyAfter":  " and agree to the processing of my data as outlined.",
+                    "submit":  "Send message",
+                    "submissionUnavailable":  "Message sending is not available yet. Your message has not been sent.",
+                    "socialsLabel":  "Contact and social profiles",
+                    "githubLabel":  "GitHub profile",
+                    "mailLabel":  "Send email",
+                    "linkedinLabel":  "LinkedIn"
+                },
+    "legal":  {
+                  "back":  "Back to portfolio",
+                  "title":  "Legal Notice",
+                  "imprintTitle":  "Imprint",
+                  "imprintName":  "[Student Names List]",
+                  "imprintAddress":  "[Address of the JOIN operator - e.g. one of the students]",
+                  "imprintCity":  "[Postcode and city]",
+                  "boardTitle":  "Exploring the Board",
+                  "boardEmail":  "Email: [Email]",
+                  "acceptanceTitle":  "Acceptance of terms",
+                  "acceptanceBefore":  "By accessing and using",
+                  "acceptanceAfter":  "(Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice.",
+                  "scopeTitle":  "Scope and ownership of the product",
+                  "scopeAfterPortfolio":  "has been developed as part of a student group project in a web development bootcamp at the",
+                  "scopeAfterAcademy":  "It has an educational purpose and is not intended for extensive personal \u0026 business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.",
+                  "scopeDesignBefore":  "The design of",
+                  "scopeDesignMiddle":  "is owned by the",
+                  "scopeDesignAfter":  "Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.",
+                  "proprietaryTitle":  "Proprietary rights",
+                  "proprietaryBefore":  "Aside from the design owned by",
+                  "proprietaryMiddle":  "we, the listed students, retain all proprietary rights in",
+                  "proprietaryAfter":  "including any associated copyrighted material, trademarks, and other proprietary information.",
+                  "useTitle":  "Use of the product",
+                  "useAfterFirst":  "is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of",
+                  "useAfterSecond":  "for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of",
+                  "disclaimerTitle":  "Disclaimer of warranties and limitation of liability",
+                  "disclaimerAfterPortfolio":  "is provided \"as is\" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the",
+                  "disclaimerAfterAcademy":  "be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of",
+                  "indemnityTitle":  "Indemnity",
+                  "indemnityBefore":  "You agree to indemnify, defend and hold harmless us, the listed students, the",
+                  "indemnityMiddle":  "and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of",
+                  "indemnityAfter":  "and/or your breach of this Legal Notice.",
+                  "closing":  "For any questions or notices, please contact us at [Contact Email].",
+                  "templateDate":  "Date: July 26, 2025"
+              },
+    "privacy":  {
+                    "draftText":  "This privacy policy contains placeholders. It must be completed and reviewed before the website is published.",
+                    "sections":  {
+                                     "contact":  {
+                                                     "text":  "[Describe how contact requests are processed, including the future contact form if activated, recipients, legal basis and retention.]",
+                                                     "title":  "Contact requests"
+                                                 },
+                                     "controller":  {
+                                                        "text":  "[Enter the name and contact details of the responsible person or organization.]",
+                                                        "title":  "Data controller"
+                                                    },
+                                     "authority":  {
+                                                       "text":  "You may have the right to lodge a complaint with a competent data protection supervisory authority. [Verify and complete the applicable information.]",
+                                                       "title":  "Right to lodge a complaint"
+                                                   },
+                                     "storage":  {
+                                                     "text":  "[Verify and describe browser storage, including the saved language preference, and any cookies or similar technologies.]",
+                                                     "title":  "Local storage and cookies"
+                                                 },
+                                     "retention":  {
+                                                       "text":  "[Describe applicable storage periods or criteria for determining them.]",
+                                                       "title":  "Retention and deletion"
+                                                   },
+                                     "hosting":  {
+                                                     "text":  "[Enter the hosting provider, relevant data processing activities and legal basis.]",
+                                                     "title":  "Website hosting"
+                                                 },
+                                     "external":  {
+                                                      "text":  "[List applicable external services, embedded content, data transfers and any relevant safeguards. Review GitHub, LinkedIn and future Supabase usage.]",
+                                                      "title":  "External services and links"
+                                                  },
+                                     "logs":  {
+                                                  "text":  "[Describe whether server logs are collected, what data is included, the purposes, legal basis and retention period.]",
+                                                  "title":  "Server log files"
+                                              },
+                                     "rights":  {
+                                                    "text":  "Depending on the applicable requirements, you may have rights of access, rectification, erasure, restriction, data portability and objection. Consent may be withdrawn where processing relies on consent. [Add the applicable details and contact process.]",
+                                                    "title":  "Your data protection rights"
+                                                }
+                                 },
+                    "back":  "Back to portfolio",
+                    "draftTitle":  "Draft status",
+                    "title":  "Privacy policy",
+                    "intro":  "Information about the processing of personal data on this website. This document is currently a draft."
+                }
+}

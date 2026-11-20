@@ -5,6 +5,7 @@ import {
   OnDestroy,
   OnInit,
   ViewChild,
+  inject,
   signal,
 } from '@angular/core';
 
@@ -13,6 +14,7 @@ import { LanguageSwitch, type Language } from '../language-switch/language-switc
 import { BurgerMenu } from '../burger-menu/burger-menu';
 
 import { Navigation } from '../navigation/navigation';
+import { LanguageService } from '../../../core/language.service';
 
 type Line = [number, number, number, number];
 type Pose = [Line, Line, Line];
@@ -112,7 +114,8 @@ export class Header implements OnInit, OnDestroy {
   protected readonly menuOpen = signal(false);
   protected readonly menuPhase = signal<'closed' | 'opening' | 'open' | 'closing'>('closed');
   protected readonly burgerLines = signal<Pose>(BURGER_POSES[0]);
-  protected readonly language = signal<Language>(this.getInitialLanguage());
+  private readonly languageService = inject(LanguageService);
+  protected readonly language = this.languageService.language;
 
   private animationFrame: number | null = null;
   private animationTimeout: ReturnType<typeof setTimeout> | null = null;
@@ -174,11 +177,7 @@ export class Header implements OnInit, OnDestroy {
   }
 
   protected setLanguage(language: Language): void {
-    this.language.set(language);
-
-    if (typeof window !== 'undefined') {
-      window.localStorage.setItem('portfolio-language', language);
-    }
+    this.languageService.setLanguage(language);
   }
 
   private animateBurger(opening: boolean): void {

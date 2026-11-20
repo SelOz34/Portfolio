@@ -1,0 +1,173 @@
+{
+    "navigation":  {
+                       "about":  "Über mich",
+                       "skills":  "Meine Fähigkeiten",
+                       "portfolio":  "Portfolio",
+                       "contact":  "Kontakt"
+                   },
+    "common":  {
+                   "backToTop":  "Nach oben",
+                   "legalNotice":  "Impressum",
+                   "privacyPolicy":  "Datenschutzerklärung"
+               },
+    "hero":  {
+                 "titleFirst":  "Frontend",
+                 "titleSecond":  "Entwickler",
+                 "emailLabel":  "E-Mail an Stefan Engel senden",
+                 "scrollLabel":  "Zu Über mich scrollen",
+                 "scrollFirst":  "Nach",
+                 "scrollSecond":  "unten"
+             },
+    "about":  {
+                  "title":  "Über mich",
+                  "description":  "Schreibe einige Informationen über dich, die mit der IT zu tun haben. Warum begeisterst du dich für das Programmieren? Zeige deine Bereitschaft, neue Technologien zu erlernen. Beschreibe kurz, wie du an Problemlösungen herangehst. Du kannst einige deiner wichtigsten Eigenschaften nennen, zum Beispiel analytisches Denken, Kreativität, Ausdauer und Teamfähigkeit.",
+                  "location":  "Wohnhaft in München",
+                  "availability":  "Offen für Remote-Arbeit",
+                  "button":  "Lass uns sprechen",
+                  "portraitAlt":  "Porträt von Stefan Engel"
+              },
+    "skills":  {
+                   "title":  "Meine Skills",
+                   "footerQuestion":  "Fehlt ein bestimmter Skill?",
+                   "contactButton":  "Kontaktiert mich",
+                   "footerLearning":  "Ich bin immer bereit, Neues zu lernen!"
+               },
+    "portfolio":  {
+                      "title":  "Portfolio",
+                      "description":  "Entdecke hier eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten in der Praxis zu erleben.",
+                      "projects":  {
+                                       "pokedex":  {
+                                                       "imageAlt":  "Vorschau des Pokedex-Projekts"
+                                                   },
+                                       "pollo-loco":  {
+                                                          "imageAlt":  "Vorschau des Pollo-Loco-Projekts"
+                                                      },
+                                       "join":  {
+                                                    "imageAlt":  "Vorschau des Join-Projekts"
+                                                }
+                                   }
+                  },
+    "references":  {
+                       "title":  "Referenzen",
+                       "description":  "Ich arbeite sowohl eigenständig als auch im Team sehr gerne. Hier erfährst du, was meine Kollegen über die Zusammenarbeit mit mir sagen.",
+                       "openDetails":  "Vollständige Referenz lesen",
+                       "closeDetails":  "Referenz schließen",
+                       "items":  {
+                                     "v-schuster":  {
+                                                        "role":  "Teamkollege",
+                                                        "quote":  "Michael hat das Team mit seiner hervorragenden Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne seinen Einsatz wären wir nicht so weit gekommen."
+                                                    },
+                                     "e-eichinger":  {
+                                                         "role":  "Teamkollege",
+                                                         "quote":  "Michi war ein großartiger Teamkollege bei DA. Sein engagierter Einsatz und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreicht haben."
+                                                     },
+                                     "i-nuber":  {
+                                                     "role":  "Frontend-Entwickler",
+                                                     "quote":  "Es war eine große Freude, mit Michael zusammenzuarbeiten. Er versteht es, Teammitglieder zu motivieren und zu ermutigen, ihr Bestes zu geben, und bringt immer neue Ideen ins Brainstorming ein. Auch das Wohlbefinden der Teammitglieder lag ihm am Herzen. Er hatte stets ein offenes Ohr, war jederzeit hilfsbereit und brachte außerdem einen großartigen Sinn für Humor mit."
+                                                 }
+                                 }
+                   },
+    "contact":  {
+                    "title":  "Sag Hallo!",
+                    "introTitle":  "Möchtest du ein neues Projekt besprechen?",
+                    "introText":  "Sag Hallo! Lass uns über deine Ideen sprechen und sie gemeinsam umsetzen.",
+                    "nameLabel":  "Dein Name",
+                    "emailLabel":  "Deine E-Mail",
+                    "messageLabel":  "Deine Nachricht",
+                    "errors":  {
+                                   "nameRequired":  "Bitte gib deinen Namen ein.",
+                                   "emailInvalid":  "Bitte gib eine gültige E-Mail-Adresse ein.",
+                                   "emailRequired":  "Bitte gib deine E-Mail-Adresse ein.",
+                                   "messageRequired":  "Bitte gib eine Nachricht ein.",
+                                   "privacyRequired":  "Bitte stimme der Datenschutzerklärung zu."
+                               },
+                    "privacyBefore":  "Ich habe die ",
+                    "privacyAfter":  " gelesen und stimme der dort beschriebenen Verarbeitung meiner Daten zu.",
+                    "submit":  "Nachricht senden",
+                    "submissionUnavailable":  "Der Nachrichtenversand ist noch nicht verfügbar. Deine Nachricht wurde nicht gesendet.",
+                    "socialsLabel":  "Kontakt und Social-Media-Profile",
+                    "githubLabel":  "GitHub-Profil",
+                    "mailLabel":  "E-Mail senden",
+                    "linkedinLabel":  "LinkedIn"
+                },
+    "legal":  {
+                  "back":  "Zurück zum Portfolio",
+                  "title":  "Impressum",
+                  "imprintTitle":  "Impressum",
+                  "imprintName":  "[Namen der Studierenden]",
+                  "imprintAddress":  "[Anschrift des JOIN-Betreibers – z. B. eines der Studierenden]",
+                  "imprintCity":  "[Postleitzahl und Ort]",
+                  "boardTitle":  "Kontakt",
+                  "boardEmail":  "E-Mail: [E-Mail-Adresse]",
+                  "acceptanceTitle":  "Annahme der Nutzungsbedingungen",
+                  "acceptanceBefore":  "Durch den Zugriff auf und die Nutzung von",
+                  "acceptanceAfter":  "(Produkt) erkennst du die folgenden Nutzungsbedingungen sowie gegebenenfalls bereitgestellte Richtlinien und Änderungen an. Wir, die aufgeführten Studierenden, können diese Bedingungen von Zeit zu Zeit ohne vorherige Ankündigung ändern.",
+                  "scopeTitle":  "Umfang und Eigentum am Produkt",
+                  "scopeAfterPortfolio":  "wurde als studentisches Gruppenprojekt im Rahmen eines Webentwicklungs-Bootcamps der",
+                  "scopeAfterAcademy":  "entwickelt. Es dient Bildungszwecken und ist nicht für eine umfangreiche private oder geschäftliche Nutzung vorgesehen. Wir können daher keine durchgehende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder andere Qualitätsmerkmale garantieren.",
+                  "scopeDesignBefore":  "Das Design von",
+                  "scopeDesignMiddle":  "ist Eigentum der",
+                  "scopeDesignAfter":  "Eine unberechtigte Nutzung, Vervielfältigung, Veränderung, Verbreitung oder Nachbildung des Designs ist untersagt.",
+                  "proprietaryTitle":  "Eigentumsrechte",
+                  "proprietaryBefore":  "Abgesehen vom Design, dessen Rechte bei der",
+                  "proprietaryMiddle":  "liegen, behalten wir, die aufgeführten Studierenden, sämtliche eigenen Rechte an",
+                  "proprietaryAfter":  "einschließlich damit verbundenen urheberrechtlich geschützten Materials, Marken und sonstiger geschützter Informationen.",
+                  "useTitle":  "Nutzung des Produkts",
+                  "useAfterFirst":  "darf nur für rechtmäßige Zwecke und im Einklang mit den geltenden Gesetzen und Vorschriften genutzt werden. Eine Verwendung von",
+                  "useAfterSecond":  "für rechtswidrige Aktivitäten oder um andere zu belästigen, zu schädigen, zu bedrohen oder einzuschüchtern, ist untersagt. Du bist für deine Interaktionen mit anderen Nutzern von",
+                  "disclaimerTitle":  "Gewährleistungsausschluss und Haftungsbeschränkung",
+                  "disclaimerAfterPortfolio":  "wird im Rahmen dieser Vorlage ohne ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, soweit rechtlich zulässig. Weder wir, die aufgeführten Studierenden, noch die",
+                  "disclaimerAfterAcademy":  "übernehmen im gesetzlich zulässigen Umfang eine Haftung für unmittelbare oder mittelbare Schäden, Folgeschäden oder sonstige Verluste aus der Nutzung oder Leistung von",
+                  "indemnityTitle":  "Freistellung",
+                  "indemnityBefore":  "Du erklärst dich nach Maßgabe des anwendbaren Rechts bereit, uns, die aufgeführten Studierenden, die",
+                  "indemnityMiddle":  "sowie verbundene Unternehmen, Partner und Beschäftigte hinsichtlich Ansprüchen, Schäden, Kosten oder Verbindlichkeiten freizustellen, die aus deiner Nutzung von",
+                  "indemnityAfter":  "und/oder einem Verstoß gegen diese Nutzungsbedingungen entstehen.",
+                  "closing":  "Bei Fragen oder Mitteilungen kontaktiere uns bitte unter [Kontakt-E-Mail].",
+                  "templateDate":  "Datum der Figma-Vorlage: 26. Juli 2025"
+              },
+    "privacy":  {
+                    "draftText":  "Diese Datenschutzerklärung enthält noch Platzhalter. Sie muss vor der Veröffentlichung der Website vervollständigt und geprüft werden.",
+                    "sections":  {
+                                     "contact":  {
+                                                     "text":  "[Verarbeitung von Kontaktanfragen erläutern, einschließlich des später aktivierten Kontaktformulars, Empfängern, Rechtsgrundlage und Speicherdauer.]",
+                                                     "title":  "Kontaktanfragen"
+                                                 },
+                                     "controller":  {
+                                                        "text":  "[Name und Kontaktdaten der verantwortlichen Person oder Organisation ergänzen.]",
+                                                        "title":  "Verantwortliche Stelle"
+                                                    },
+                                     "authority":  {
+                                                       "text":  "Unter den gesetzlichen Voraussetzungen besteht das Recht, sich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren. [Zuständige Angaben prüfen und ergänzen.]",
+                                                       "title":  "Beschwerderecht bei einer Aufsichtsbehörde"
+                                                   },
+                                     "storage":  {
+                                                     "text":  "[Browserspeicherung einschließlich der gespeicherten Sprachauswahl sowie etwaige Cookies oder vergleichbare Technologien prüfen und erläutern.]",
+                                                     "title":  "Lokale Speicherung und Cookies"
+                                                 },
+                                     "retention":  {
+                                                       "text":  "[Jeweilige Speicherfristen oder Kriterien für ihre Festlegung erläutern.]",
+                                                       "title":  "Speicherdauer und Löschung"
+                                                   },
+                                     "hosting":  {
+                                                     "text":  "[Hosting-Anbieter, relevante Datenverarbeitungen und Rechtsgrundlage ergänzen.]",
+                                                     "title":  "Hosting der Website"
+                                                 },
+                                     "external":  {
+                                                      "text":  "[Tatsächlich eingesetzte Dienste, eingebundene Inhalte, Datenübermittlungen und gegebenenfalls Schutzmaßnahmen ergänzen. GitHub, LinkedIn und die spätere Supabase-Nutzung prüfen.]",
+                                                      "title":  "Externe Dienste und Verlinkungen"
+                                                  },
+                                     "logs":  {
+                                                  "text":  "[Prüfen und beschreiben, ob Serverprotokolle erfasst werden, welche Daten betroffen sind, zu welchen Zwecken, auf welcher Rechtsgrundlage und wie lange sie gespeichert werden.]",
+                                                  "title":  "Server-Logdateien"
+                                              },
+                                     "rights":  {
+                                                    "text":  "Je nach gesetzlichen Voraussetzungen bestehen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Eine erteilte Einwilligung kann widerrufen werden. [Anwendbare Einzelheiten und Kontaktweg ergänzen.]",
+                                                    "title":  "Deine Datenschutzrechte"
+                                                }
+                                 },
+                    "back":  "Zurück zum Portfolio",
+                    "draftTitle":  "Entwurfsstatus",
+                    "title":  "Datenschutzerklärung",
+                    "intro":  "Informationen über die Verarbeitung personenbezogener Daten auf dieser Website. Dieses Dokument befindet sich noch im Entwurfsstadium."
+                }
+}

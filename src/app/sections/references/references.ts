@@ -1,45 +1,40 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, ViewChild, signal } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 interface ReferenceItem {
   readonly id: string;
   readonly name: string;
-  readonly role: string;
-  readonly quote: string;
 }
 
 @Component({
   selector: 'app-references',
+  imports: [TranslatePipe],
   templateUrl: './references.html',
   styleUrl: './references.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class References {
-  protected readonly title = 'References';
+  @ViewChild('detailsDialog')
+  private detailsDialog?: ElementRef<HTMLDialogElement>;
 
-  protected readonly description =
-    'I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.';
+  protected readonly selectedReference = signal<ReferenceItem | null>(null);
 
   protected readonly references: readonly ReferenceItem[] = [
-    {
-      id: 'v-schuster',
-      name: 'V. Schuster',
-      role: 'Team Partner',
-      quote:
-        "Michael really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
-    },
-    {
-      id: 'e-eichinger',
-      name: 'E.Eichinger',
-      role: 'Team Partner',
-      quote:
-        'Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.',
-    },
-    {
-      id: 'i-nuber',
-      name: 'I.Nuber',
-      role: 'Frontend Engineer',
-      quote:
-        'It was a great pleasure to work with Michael. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well.',
-    },
+    { id: 'v-schuster', name: 'V. Schuster' },
+    { id: 'e-eichinger', name: 'E.Eichinger' },
+    { id: 'i-nuber', name: 'I.Nuber' },
   ];
+
+  protected openDetails(reference: ReferenceItem): void {
+    this.selectedReference.set(reference);
+    this.detailsDialog?.nativeElement.showModal();
+  }
+
+  protected closeDetails(): void {
+    this.detailsDialog?.nativeElement.close();
+  }
+
+  protected onDialogClose(): void {
+    this.selectedReference.set(null);
+  }
 }

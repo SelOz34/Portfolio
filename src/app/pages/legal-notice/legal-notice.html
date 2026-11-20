@@ -1,0 +1,112 @@
+<div class="legal">
+  <header class="legal__header">
+    <a class="legal__logo" routerLink="/" [attr.aria-label]="'legal.back' | translate">
+      <img src="/icons/logo.svg" alt="SE Logo" width="67" height="30" />
+    </a>
+
+    <app-language-switch [language]="language()" (languageChange)="setLanguage($event)" />
+  </header>
+
+  <main class="legal__main">
+    <a class="legal__back" routerLink="/" fragment="contact">
+      <span aria-hidden="true">←</span>
+      {{ 'legal.back' | translate }}
+    </a>
+
+    <h1 class="legal__title">{{ 'legal.title' | translate }}</h1>
+
+    <div class="legal__content">
+      <section class="legal__section">
+        <h2>{{ 'legal.imprintTitle' | translate }}</h2>
+        <ul class="legal__list">
+          <li>{{ 'legal.imprintName' | translate }}</li>
+          <li>{{ 'legal.imprintAddress' | translate }}</li>
+          <li>{{ 'legal.imprintCity' | translate }}</li>
+        </ul>
+      </section>
+
+      <section class="legal__section">
+        <h2>{{ 'legal.boardTitle' | translate }}</h2>
+        <p>{{ 'legal.boardEmail' | translate }}</p>
+      </section>
+
+      <section class="legal__section">
+        <h2>{{ 'legal.acceptanceTitle' | translate }}</h2>
+        <p>
+          {{ 'legal.acceptanceBefore' | translate }}
+          <span class="legal__accent">Portfolio</span>
+          {{ 'legal.acceptanceAfter' | translate }}
+        </p>
+      </section>
+
+      <section class="legal__section">
+        <h2>{{ 'legal.scopeTitle' | translate }}</h2>
+        <p>
+          <span class="legal__accent">Portfolio</span>
+          {{ 'legal.scopeAfterPortfolio' | translate }}
+          <span class="legal__accent">Developer Akademie GmbH</span>.
+          {{ 'legal.scopeAfterAcademy' | translate }}
+        </p>
+        <p>
+          {{ 'legal.scopeDesignBefore' | translate }}
+          <span class="legal__accent">Portfolio</span>
+          {{ 'legal.scopeDesignMiddle' | translate }}
+          <span class="legal__accent">Developer Akademie GmbH</span>.
+          {{ 'legal.scopeDesignAfter' | translate }}
+        </p>
+      </section>
+
+      <section class="legal__section">
+        <h2>{{ 'legal.proprietaryTitle' | translate }}</h2>
+        <p>
+          {{ 'legal.proprietaryBefore' | translate }}
+          <span class="legal__accent">Developer Akademie GmbH</span>,
+          {{ 'legal.proprietaryMiddle' | translate }}
+          <span class="legal__accent">Portfolio</span>,
+          {{ 'legal.proprietaryAfter' | translate }}
+        </p>
+      </section>
+
+      <section class="legal__section">
+        <h2>{{ 'legal.useTitle' | translate }}</h2>
+        <p>
+          <span class="legal__accent">Portfolio</span>
+          {{ 'legal.useAfterFirst' | translate }}
+          <span class="legal__accent">Portfolio</span>
+          {{ 'legal.useAfterSecond' | translate }}
+          <span class="legal__accent">Portfolio</span>.
+        </p>
+      </section>
+
+      <section class="legal__section">
+        <h2>{{ 'legal.disclaimerTitle' | translate }}</h2>
+        <p>
+          <span class="legal__accent">Portfolio</span>
+          {{ 'legal.disclaimerAfterPortfolio' | translate }}
+          <span class="legal__accent">Developer Akademie</span>,
+          {{ 'legal.disclaimerAfterAcademy' | translate }}
+          <span class="legal__accent">Portfolio</span>.
+        </p>
+      </section>
+
+      <section class="legal__section">
+        <h2>{{ 'legal.indemnityTitle' | translate }}</h2>
+        <p>
+          {{ 'legal.indemnityBefore' | translate }}
+          <span class="legal__accent">Developer Akademie</span>,
+          {{ 'legal.indemnityMiddle' | translate }}
+          <span class="legal__accent">Portfolio</span>
+          {{ 'legal.indemnityAfter' | translate }}
+        </p>
+      </section>
+
+      <p class="legal__closing">{{ 'legal.closing' | translate }}</p>
+      <p class="legal__date">{{ 'legal.templateDate' | translate }}</p>
+    </div>
+  </main>
+
+  <footer class="legal__footer">
+    <a routerLink="/" fragment="contact">{{ 'legal.back' | translate }}</a>
+    <span>© Stefan Engel 2022</span>
+  </footer>
+</div>

@@ -37,6 +37,7 @@
 .portfolio__description {
   width: 100%;
   max-width: 525px;
+  min-height: 3lh;
   margin: 0;
   font-family: var(--font-body);
   font-size: 22px;
@@ -139,6 +140,10 @@
     margin-bottom: 90px;
   }
 
+  .portfolio__description {
+    min-height: 3lh;
+  }
+
   .portfolio__project {
     min-height: 0;
     margin-bottom: 70px;
@@ -171,6 +176,7 @@
 
   .portfolio__description {
     max-width: 350px;
+    min-height: 5lh;
     font-size: 16px;
   }
 
@@ -213,6 +219,7 @@
   }
 
   .portfolio__description {
+    min-height: 6lh;
     font-size: 15px;
   }
 

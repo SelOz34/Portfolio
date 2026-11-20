@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 interface SkillItem {
   readonly name: string;
@@ -7,6 +8,7 @@ interface SkillItem {
 
 @Component({
   selector: 'app-skills',
+  imports: [TranslatePipe],
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })

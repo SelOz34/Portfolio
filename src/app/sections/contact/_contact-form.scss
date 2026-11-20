@@ -63,6 +63,7 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
+  min-height: 2lh;
 }
 
 .contact__intro p {
@@ -71,6 +72,7 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 1.2;
+  min-height: 2lh;
 }
 
 /* Contact form */
@@ -194,10 +196,11 @@
 /* Privacy policy */
 
 .contact__privacy {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 4px;
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 8px;
+  width: 100%;
   margin-top: 16px;
   font-family: var(--font-body);
   font-size: 14px;
@@ -207,8 +210,16 @@
 .contact__privacy-label {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
+}
+
+.contact__privacy-copy {
+  min-width: 0;
+  min-height: 3lh;
+  overflow-wrap: break-word;
 }
 
 .contact__privacy-label input {
@@ -262,7 +273,9 @@
 }
 
 .contact__privacy-link:hover {
-  font-weight: 700;
+  text-shadow:
+    0.35px 0 currentColor,
+    -0.35px 0 currentColor;
 }
 
 /* Submit button */
@@ -312,4 +325,30 @@
   font-family: var(--font-body);
   font-size: 14px;
   text-align: center;
+}
+
+/* Reserve space for both translations on narrow screens. */
+
+@media (max-width: 768px) {
+  .contact__intro h3 {
+    min-height: 4lh;
+  }
+
+  .contact__intro p {
+    min-height: 4lh;
+  }
+}
+
+/* Reserve space for translations without shifting the submit button. */
+
+@media (max-width: 768px) {
+  .contact__privacy-copy {
+    min-height: 4lh;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact__privacy-copy {
+    min-height: 6lh;
+  }
 }

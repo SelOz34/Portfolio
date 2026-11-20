@@ -2,12 +2,10 @@
   <div class="references__container">
     <header class="references__header">
       <h2 class="references__title" id="references-title">
-        {{ title }}
+        {{ 'references.title' | translate }}
       </h2>
 
-      <p class="references__description">
-        {{ description }}
-      </p>
+      <p class="references__description"></p>
     </header>
 
     <div class="references__grid">
@@ -21,15 +19,51 @@
             </h3>
 
             <p class="references__role">
-              {{ reference.role }}
+              {{ 'references.items.' + reference.id + '.role' | translate }}
             </p>
           </div>
 
           <blockquote class="references__quote">
-            <p>{{ reference.quote }}</p>
+            <p>{{ 'references.items.' + reference.id + '.quote' | translate }}</p>
           </blockquote>
+
+          <button
+            type="button"
+            class="references__card-trigger"
+            [attr.aria-label]="('references.openDetails' | translate) + ': ' + reference.name"
+            (click)="openDetails(reference)"
+          ></button>
         </article>
       }
     </div>
   </div>
+
+  <dialog
+    #detailsDialog
+    class="references__dialog"
+    aria-labelledby="references-dialog-title"
+    (close)="onDialogClose()"
+  >
+    <button
+      type="button"
+      class="references__dialog-close"
+      [attr.aria-label]="'references.closeDetails' | translate"
+      (click)="closeDetails()"
+      autofocus
+    >
+      <span aria-hidden="true">×</span>
+    </button>
+
+    @if (selectedReference(); as reference) {
+      <h2 id="references-dialog-title" class="references__dialog-title">
+        {{ reference.name }}
+      </h2>
+      <p class="references__dialog-role">
+        {{ 'references.items.' + reference.id + '.role' | translate }}
+      </p>
+      <blockquote class="references__dialog-quote">
+        <p>{{ 'references.items.' + reference.id + '.quote' | translate }}</p>
+      </blockquote>
+    }
+  </dialog>
 </section>

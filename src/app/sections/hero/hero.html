@@ -1,8 +1,8 @@
 <section class="hero" id="hero" aria-labelledby="hero-title">
   <div class="hero__content">
     <h1 class="hero__title" id="hero-title">
-      <span>Frontend</span>
-      <span>Developer</span>
+      <span>{{ 'hero.titleFirst' | translate }}</span>
+      <span>{{ 'hero.titleSecond' | translate }}</span>
     </h1>
 
     <div class="hero__signature">
@@ -11,17 +11,21 @@
     </div>
   </div>
 
-  <a class="hero__email" href="mailto:sefan@gmail.com" aria-label="Send email to Stefan Engel">
+  <a
+    class="hero__email"
+    href="mailto:sefan@gmail.com"
+    [attr.aria-label]="'hero.emailLabel' | translate"
+  >
     sefan@gmail.com
   </a>
 
-  <a class="hero__scroll" href="#about" aria-label="Scroll down to About me">
+  <a class="hero__scroll" href="#about" [attr.aria-label]="'hero.scrollLabel' | translate">
     <img src="/icons/scroll-down-arrow.svg" alt="" width="48" height="84" />
 
     <span>
-      Scroll
+      {{ 'hero.scrollFirst' | translate }}
       <br />
-      Down
+      {{ 'hero.scrollSecond' | translate }}
     </span>
   </a>
 </section>

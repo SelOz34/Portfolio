@@ -1,11 +1,11 @@
 <section class="contact" id="contact" aria-labelledby="contact-title">
   <div class="contact__container">
-    <h2 class="contact__title" id="contact-title">Say Hi!</h2>
+    <h2 class="contact__title" id="contact-title">{{ 'contact.title' | translate }}</h2>
 
     <div class="contact__main">
       <header class="contact__intro">
-        <h3>Want to discuss a new project?</h3>
-        <p>Say hello! let's discuss your ideas and make it happen</p>
+        <h3>{{ 'contact.introTitle' | translate }}</h3>
+        <p>{{ 'contact.introText' | translate }}</p>
       </header>
 
       <form class="contact__form" (ngSubmit)="onSubmit()" novalidate>
@@ -16,7 +16,7 @@
             [class.contact__field--floating]="focused.name || name.trim().length > 0"
             [class.contact__field--invalid]="!!nameError"
           >
-            <label for="contact-name">Your name</label>
+            <label for="contact-name">{{ 'contact.nameLabel' | translate }}</label>
 
             <input
               id="contact-name"
@@ -56,7 +56,7 @@
 
           @if (nameError) {
             <p class="contact__error" id="name-error">
-              {{ nameError }}
+              {{ nameError | translate }}
             </p>
           }
         </div>
@@ -68,7 +68,7 @@
             [class.contact__field--floating]="focused.email || email.trim().length > 0"
             [class.contact__field--invalid]="!!emailError"
           >
-            <label for="contact-email">Your email</label>
+            <label for="contact-email">{{ 'contact.emailLabel' | translate }}</label>
 
             <input
               id="contact-email"
@@ -108,7 +108,7 @@
 
           @if (emailError) {
             <p class="contact__error" id="email-error">
-              {{ emailError }}
+              {{ emailError | translate }}
             </p>
           }
         </div>
@@ -120,7 +120,7 @@
             [class.contact__field--floating]="focused.message || message.trim().length > 0"
             [class.contact__field--invalid]="!!messageError"
           >
-            <label for="contact-message"> Your message </label>
+            <label for="contact-message">{{ 'contact.messageLabel' | translate }}</label>
 
             <textarea
               id="contact-message"
@@ -159,7 +159,7 @@
 
           @if (messageError) {
             <p class="contact__error" id="message-error">
-              {{ messageError }}
+              {{ messageError | translate }}
             </p>
           }
         </div>
@@ -168,36 +168,42 @@
         <div class="contact__privacy">
           <label class="contact__privacy-label">
             <input
+              id="contact-privacy-accepted"
               type="checkbox"
               name="privacyAccepted"
               [(ngModel)]="privacyAccepted"
               (blur)="privacyTouched = true"
               [attr.aria-invalid]="!!privacyError"
               [attr.aria-describedby]="privacyError ? 'privacy-error' : null"
+              aria-labelledby="contact-privacy-text"
             />
 
             <span class="contact__checkbox" aria-hidden="true"></span>
-
-            <span>I've read the</span>
           </label>
 
-          <a class="contact__privacy-link" href="/privacy-policy"> privacy policy </a>
-
-          <span> and agree to the processing of my data as outlined. </span>
+          <div class="contact__privacy-copy" id="contact-privacy-text">
+            <span>{{ 'contact.privacyBefore' | translate }}</span>
+            <a class="contact__privacy-link" routerLink="/privacy-policy">{{
+              'common.privacyPolicy' | translate
+            }}</a>
+            <span>{{ 'contact.privacyAfter' | translate }}</span>
+          </div>
         </div>
 
         @if (privacyError) {
           <p class="contact__error" id="privacy-error">
-            {{ privacyError }}
+            {{ privacyError | translate }}
           </p>
         }
 
         <!-- Submit -->
-        <button class="contact__submit" type="submit" [disabled]="!canSubmit">Send message</button>
+        <button class="contact__submit" type="submit" [disabled]="!canSubmit">
+          {{ 'contact.submit' | translate }}
+        </button>
 
         @if (submissionNotice) {
           <p class="contact__notice" role="status">
-            {{ submissionNotice }}
+            {{ submissionNotice | translate }}
           </p>
         }
       </form>
@@ -207,7 +213,7 @@
     <button
       class="contact__back-to-top"
       type="button"
-      aria-label="Back to top"
+      [attr.aria-label]="'common.backToTop' | translate"
       (click)="scrollToTop()"
     >
       <img
@@ -231,7 +237,7 @@
         <button
           class="contact__footer-logo"
           type="button"
-          aria-label="Back to top"
+          [attr.aria-label]="'common.backToTop' | translate"
           (click)="scrollToTop()"
         >
           <img src="/icons/logo.svg" alt="" />
@@ -242,14 +248,14 @@
 
       <div class="contact__footer-right">
         <!-- Social media icons -->
-        <div class="contact__socials" aria-label="Contact and social profiles">
+        <div class="contact__socials" [attr.aria-label]="'contact.socialsLabel' | translate">
           <!-- GitHub -->
           <a
             class="contact__social contact__social--github"
             href="https://github.com/SelOz34"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub profile"
+            [attr.aria-label]="'contact.githubLabel' | translate"
           >
             <span
               class="contact__social-icon contact__social-icon--default"
@@ -266,7 +272,7 @@
           <a
             class="contact__social contact__social--mail"
             href="mailto:sefan@gmail.com"
-            aria-label="Send email"
+            [attr.aria-label]="'contact.mailLabel' | translate"
           >
             <span
               class="contact__social-icon contact__social-icon--default"
@@ -285,7 +291,7 @@
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn"
+            [attr.aria-label]="'contact.linkedinLabel' | translate"
           >
             <span
               class="contact__social-icon contact__social-icon--default"
@@ -300,7 +306,9 @@
         </div>
 
         <!-- Legal notice -->
-        <a class="contact__legal" href="/legal-notice"> Legal notice </a>
+        <a class="contact__legal" routerLink="/legal-notice">{{
+          'common.legalNotice' | translate
+        }}</a>
       </div>
     </footer>
   </div>

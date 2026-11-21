@@ -17,7 +17,16 @@
             {{ project.title }}
           </h3>
 
-          <div class="portfolio__image-wrapper">
+          <div
+            class="portfolio__image-wrapper"
+            role="group"
+            tabindex="0"
+            [attr.aria-label]="
+              language() === 'de'
+                ? 'Projektdetails zu ' + project.title
+                : 'Project details for ' + project.title
+            "
+          >
             <img
               class="portfolio__image"
               [src]="project.imageSrc"
@@ -26,10 +35,78 @@
               height="393"
               loading="lazy"
             />
+
+            <span class="portfolio__frame" aria-hidden="true"></span>
+
+            <span class="portfolio__arrow-circle" aria-hidden="true">
+              <svg
+                class="portfolio__arrow"
+                width="52"
+                height="52"
+                viewBox="0 0 52 52"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                focusable="false"
+              >
+                <path
+                  d="M26 3V49M11 34L26 49L41 34"
+                  stroke="#fff"
+                  stroke-width="4"
+                  stroke-linecap="square"
+                  stroke-linejoin="miter"
+                />
+              </svg>
+            </span>
           </div>
 
           <div class="portfolio__date">
             {{ project.completionDate }}
+          </div>
+
+          <div class="portfolio__details">
+            <h4 class="portfolio__detail-title">
+              {{ project.title }}
+            </h4>
+
+            <div class="portfolio__technologies">
+              @for (technology of project.technologies; track technology) {
+                <span>{{ technology }}</span>
+              }
+            </div>
+
+            <p class="portfolio__detail-description">
+              {{ project.description[language()] }}
+            </p>
+
+            <div class="portfolio__buttons">
+              @if (project.githubUrl) {
+                <a
+                  class="portfolio__button"
+                  [href]="project.githubUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
+              } @else {
+                <button class="portfolio__button" type="button" disabled>Github</button>
+              }
+
+              @if (project.showLiveTest || project.liveUrl) {
+                @if (project.liveUrl) {
+                  <a
+                    class="portfolio__button"
+                    [href]="project.liveUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Test
+                  </a>
+                } @else {
+                  <button class="portfolio__button" type="button" disabled>Live Test</button>
+                }
+              }
+            </div>
           </div>
         </article>
       }

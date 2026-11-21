@@ -13,6 +13,7 @@
 
 .contact__container {
   position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -38,8 +39,25 @@
   transition: color 200ms ease;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (min-width: 769px) and (hover: hover) and (pointer: fine) {
   .contact__title:hover {
+    color: var(--color-accent);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__title {
+    animation: contact-title-color 2400ms ease-in-out infinite;
+  }
+}
+
+@keyframes contact-title-color {
+  0%,
+  100% {
+    color: var(--color-background);
+  }
+
+  50% {
     color: var(--color-accent);
   }
 }
@@ -350,5 +368,12 @@
 @media (max-width: 420px) {
   .contact__privacy-copy {
     min-height: 6lh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact__title {
+    animation: none;
+    transition: none;
   }
 }

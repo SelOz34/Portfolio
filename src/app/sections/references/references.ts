@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component, ElementRef, ViewChild, signal } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  HostListener,
+  ViewChild,
+  signal,
+} from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 
 interface ReferenceItem {
@@ -25,15 +32,51 @@ export class References {
     { id: 'i-nuber', name: 'I.Nuber' },
   ];
 
+  /**
+   * Opens the selected reference dialog.
+   */
   protected openDetails(reference: ReferenceItem): void {
+    const dialog = this.detailsDialog?.nativeElement;
+
+    if (!dialog || dialog.open) {
+      return;
+    }
+
     this.selectedReference.set(reference);
-    this.detailsDialog?.nativeElement.showModal();
+    dialog.showModal();
   }
 
+  /**
+   * Closes the currently opened reference dialog.
+   */
   protected closeDetails(): void {
-    this.detailsDialog?.nativeElement.close();
+    const dialog = this.detailsDialog?.nativeElement;
+
+    if (dialog?.open) {
+      dialog.close();
+    }
   }
 
+  /**
+   * Closes the modal on clicks inside the dialog or on its backdrop.
+   * Ignores the original click that opened the dialog.
+   */
+  @HostListener('document:click', ['$event'])
+  protected onDocumentClick(event: MouseEvent): void {
+    const dialog = this.detailsDialog?.nativeElement;
+
+    if (!dialog?.open) {
+      return;
+    }
+
+    if (event.composedPath().includes(dialog)) {
+      this.closeDetails();
+    }
+  }
+
+  /**
+   * Clears the selected reference after the dialog closes.
+   */
   protected onDialogClose(): void {
     this.selectedReference.set(null);
   }

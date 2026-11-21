@@ -6,18 +6,49 @@
   <nav id="main-navigation" class="site-navigation" aria-label="Main navigation">
     <div class="site-navigation__cream">
       <div class="site-navigation__links">
-        <a #firstMenuLink href="#about" (click)="$event.preventDefault(); navigateTo('about')">
-          <span class="navigation-corner" aria-hidden="true"></span>
+        <a
+          #firstMenuLink
+          href="#about"
+          [class.is-activating]="activeTarget() === 'about'"
+          (click)="$event.preventDefault(); navigateTo('about')"
+        >
+          <span class="navigation-frame" aria-hidden="true">
+            <span class="navigation-frame__bottom"></span>
+            <span class="navigation-frame__right"></span>
+            <span class="navigation-frame__top"></span>
+            <span class="navigation-frame__left"></span>
+          </span>
+
           {{ 'navigation.about' | translate }}
         </a>
 
-        <a href="#skills" (click)="$event.preventDefault(); navigateTo('skills')">
-          <span class="navigation-corner" aria-hidden="true"></span>
+        <a
+          href="#skills"
+          [class.is-activating]="activeTarget() === 'skills'"
+          (click)="$event.preventDefault(); navigateTo('skills')"
+        >
+          <span class="navigation-frame" aria-hidden="true">
+            <span class="navigation-frame__bottom"></span>
+            <span class="navigation-frame__right"></span>
+            <span class="navigation-frame__top"></span>
+            <span class="navigation-frame__left"></span>
+          </span>
+
           {{ 'navigation.skills' | translate }}
         </a>
 
-        <a href="#portfolio" (click)="$event.preventDefault(); navigateTo('portfolio')">
-          <span class="navigation-corner" aria-hidden="true"></span>
+        <a
+          href="#portfolio"
+          [class.is-activating]="activeTarget() === 'portfolio'"
+          (click)="$event.preventDefault(); navigateTo('portfolio')"
+        >
+          <span class="navigation-frame" aria-hidden="true">
+            <span class="navigation-frame__bottom"></span>
+            <span class="navigation-frame__right"></span>
+            <span class="navigation-frame__top"></span>
+            <span class="navigation-frame__left"></span>
+          </span>
+
           {{ 'navigation.portfolio' | translate }}
         </a>
       </div>
@@ -26,7 +57,8 @@
     <div class="site-navigation__contact">
       <div class="site-navigation__contact-inner">
         <div class="site-navigation__contact-text">
-          <h2>Say hi!</h2>
+          <h2>{{ 'contact.title' | translate }}</h2>
+
           <a href="mailto:sefan@gmail.com"> sefan@gmail.com </a>
         </div>
 

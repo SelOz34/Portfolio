@@ -1,0 +1,69 @@
+<div
+  class="section-arrow"
+  [class.section-arrow--left]="position() === 'left'"
+  [class.section-arrow--right]="position() === 'right'"
+>
+  <button
+    class="section-arrow__button"
+    [class.is-animating]="isAnimating()"
+    type="button"
+    [attr.aria-label]="label() | translate"
+    (pointerdown)="onPointerDown($event)"
+    (click)="onArrowClick($event)"
+    (animationend)="onAnimationEnd($event)"
+  >
+    <svg
+      class="section-arrow__graphic section-arrow__graphic--desktop"
+      width="300"
+      height="300"
+      viewBox="0 0 300 300"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path
+        class="section-arrow__shaft"
+        d="M41.3135 41.3135L193.521 193.521"
+        stroke="currentColor"
+        stroke-width="4"
+        vector-effect="non-scaling-stroke"
+      />
+
+      <path
+        class="section-arrow__tip"
+        d="M193.52 110.893V193.52H110.893"
+        stroke="currentColor"
+        stroke-width="4"
+        vector-effect="non-scaling-stroke"
+      />
+    </svg>
+
+    <svg
+      class="section-arrow__graphic section-arrow__graphic--mobile"
+      width="235"
+      height="235"
+      viewBox="0 0 235 235"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path
+        class="section-arrow__shaft"
+        d="M32.0567 32.0567L150.16 150.16"
+        stroke="currentColor"
+        stroke-width="4"
+        vector-effect="non-scaling-stroke"
+      />
+
+      <path
+        class="section-arrow__tip"
+        d="M150.158 86.0458V150.159H86.0449"
+        stroke="currentColor"
+        stroke-width="4"
+        vector-effect="non-scaling-stroke"
+      />
+    </svg>
+  </button>
+</div>

@@ -8,14 +8,16 @@
       <div class="skills__grid">
         @for (skill of skills; track skill.name) {
           <div class="skills__item">
-            <img
-              class="skills__icon"
-              [src]="skill.icon"
-              alt=""
-              width="72"
-              height="72"
-              loading="lazy"
-            />
+            <div class="skills__icon-window">
+              <img
+                class="skills__icon"
+                [src]="skill.icon"
+                alt=""
+                width="72"
+                height="72"
+                loading="lazy"
+              />
+            </div>
 
             <span class="skills__name">
               {{ skill.name }}
@@ -25,14 +27,16 @@
       </div>
 
       <div class="skills__footer">
-        <img
-          class="skills__learning-icon"
-          [src]="learningIcon"
-          alt=""
-          width="64"
-          height="64"
-          loading="lazy"
-        />
+        <div class="skills__learning-window">
+          <img
+            class="skills__learning-icon"
+            [src]="learningIcon"
+            alt=""
+            width="64"
+            height="64"
+            loading="lazy"
+          />
+        </div>
 
         <p class="skills__footer-text">
           <span>{{ 'skills.footerQuestion' | translate }}</span>

@@ -7,10 +7,11 @@ import { Skills } from '../../sections/skills/skills';
 import { Portfolio } from '../../sections/portfolio/portfolio';
 import { References } from '../../sections/references/references';
 import { Contact } from '../../sections/contact/contact';
+import { SectionArrow } from '../../shared/components/section-arrow/section-arrow';
 
 @Component({
   selector: 'app-home',
-  imports: [Header, Hero, About, Skills, Portfolio, References, Contact],
+  imports: [Header, Hero, About, Skills, Portfolio, References, Contact, SectionArrow],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

@@ -1,0 +1,19 @@
+@media (max-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .about__title,
+  .skills__title,
+  .portfolio__title,
+  .references__title {
+    animation: section-title-color-pulse 2400ms ease-in-out infinite;
+  }
+}
+
+@keyframes section-title-color-pulse {
+  0%,
+  100% {
+    color: var(--color-text);
+  }
+
+  50% {
+    color: var(--color-accent);
+  }
+}

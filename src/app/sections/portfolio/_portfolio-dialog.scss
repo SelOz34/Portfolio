@@ -1,0 +1,54 @@
+.portfolio-dialog {
+  position: fixed;
+  inset: 0;
+  width: calc(100% - 24px);
+  max-width: 650px;
+  max-height: calc(100dvh - 24px);
+  margin: auto;
+  padding: 14px;
+  border: 0;
+  box-sizing: border-box;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  animation: none;
+  transition: none;
+}
+
+.portfolio-dialog::backdrop {
+  background-color: rgb(0 0 0 / 70%);
+}
+
+.portfolio-dialog__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 0 10px auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.portfolio-dialog__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.portfolio-dialog__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px 4px 10px;
+}

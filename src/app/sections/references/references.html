@@ -24,7 +24,9 @@
           </div>
 
           <blockquote class="references__quote">
-            <p>{{ 'references.items.' + reference.id + '.quote' | translate }}</p>
+            <p>
+              {{ 'references.items.' + reference.id + '.quote' | translate }}
+            </p>
           </blockquote>
 
           <button
@@ -44,26 +46,32 @@
     aria-labelledby="references-dialog-title"
     (close)="onDialogClose()"
   >
-    <button
-      type="button"
-      class="references__dialog-close"
-      [attr.aria-label]="'references.closeDetails' | translate"
-      (click)="closeDetails()"
-      autofocus
-    >
-      <span aria-hidden="true">×</span>
-    </button>
+    <div class="references__dialog-content">
+      <button
+        type="button"
+        class="references__dialog-close"
+        [attr.aria-label]="'references.closeDetails' | translate"
+        (click)="closeDetails()"
+        autofocus
+      >
+        <span aria-hidden="true">×</span>
+      </button>
 
-    @if (selectedReference(); as reference) {
-      <h2 id="references-dialog-title" class="references__dialog-title">
-        {{ reference.name }}
-      </h2>
-      <p class="references__dialog-role">
-        {{ 'references.items.' + reference.id + '.role' | translate }}
-      </p>
-      <blockquote class="references__dialog-quote">
-        <p>{{ 'references.items.' + reference.id + '.quote' | translate }}</p>
-      </blockquote>
-    }
+      @if (selectedReference(); as reference) {
+        <h2 id="references-dialog-title" class="references__dialog-title">
+          {{ reference.name }}
+        </h2>
+
+        <p class="references__dialog-role">
+          {{ 'references.items.' + reference.id + '.role' | translate }}
+        </p>
+
+        <blockquote class="references__dialog-quote">
+          <p>
+            {{ 'references.items.' + reference.id + '.quote' | translate }}
+          </p>
+        </blockquote>
+      }
+    </div>
   </dialog>
 </section>

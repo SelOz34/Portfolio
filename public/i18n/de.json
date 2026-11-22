@@ -21,8 +21,8 @@
     "about":  {
                   "title":  "Über mich",
                   "description":  "Schreibe einige Informationen über dich, die mit der IT zu tun haben. Warum begeisterst du dich für das Programmieren? Zeige deine Bereitschaft, neue Technologien zu erlernen. Beschreibe kurz, wie du an Problemlösungen herangehst. Du kannst einige deiner wichtigsten Eigenschaften nennen, zum Beispiel analytisches Denken, Kreativität, Ausdauer und Teamfähigkeit.",
-                  "location":  "Wohnhaft in München",
-                  "availability":  "Offen für Remote-Arbeit",
+                  "location":  "Wohnhaft in Köln",
+                  "availability":  "Arbeite bevorzugt remote",
                   "button":  "Lass uns sprechen",
                   "portraitAlt":  "Porträt von Stefan Engel"
               },
@@ -93,12 +93,14 @@
     "legal":  {
                   "back":  "Zurück zum Portfolio",
                   "title":  "Impressum",
-                  "imprintTitle":  "Impressum",
-                  "imprintName":  "[Namen der Studierenden]",
-                  "imprintAddress":  "[Anschrift des JOIN-Betreibers – z. B. eines der Studierenden]",
-                  "imprintCity":  "[Postleitzahl und Ort]",
+                  "imprintTitle":  "Angaben gemäß § 5 DDG",
+                  "imprintName":  "Selim Özbek",
+                  "imprintAddress":  "Frankfurter Straße 75",
+                  "imprintCity":  "51065 Köln",
                   "boardTitle":  "Kontakt",
-                  "boardEmail":  "E-Mail: [E-Mail-Adresse]",
+                  "boardMobile":  "Mobiltelefon: +49 176 73869071",
+                  "boardPhone":  "Telefon: +49 221 2223249",
+                  "boardEmail":  "E-Mail: s.oezbek@soz-studio.de",
                   "acceptanceTitle":  "Annahme der Nutzungsbedingungen",
                   "acceptanceBefore":  "Durch den Zugriff auf und die Nutzung von",
                   "acceptanceAfter":  "(Produkt) erkennst du die folgenden Nutzungsbedingungen sowie gegebenenfalls bereitgestellte Richtlinien und Änderungen an. Wir, die aufgeführten Studierenden, können diese Bedingungen von Zeit zu Zeit ohne vorherige Ankündigung ändern.",
@@ -122,7 +124,7 @@
                   "indemnityBefore":  "Du erklärst dich nach Maßgabe des anwendbaren Rechts bereit, uns, die aufgeführten Studierenden, die",
                   "indemnityMiddle":  "sowie verbundene Unternehmen, Partner und Beschäftigte hinsichtlich Ansprüchen, Schäden, Kosten oder Verbindlichkeiten freizustellen, die aus deiner Nutzung von",
                   "indemnityAfter":  "und/oder einem Verstoß gegen diese Nutzungsbedingungen entstehen.",
-                  "closing":  "Bei Fragen oder Mitteilungen kontaktiere uns bitte unter [Kontakt-E-Mail].",
+                  "closing":  "Bei Fragen oder Mitteilungen kontaktiere mich bitte unter s.oezbek@soz-studio.de.",
                   "templateDate":  "Datum der Figma-Vorlage: 26. Juli 2025"
               },
     "privacy":  {

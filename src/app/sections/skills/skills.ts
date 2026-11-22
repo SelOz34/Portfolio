@@ -30,5 +30,5 @@ export class Skills {
   ];
 
   protected readonly learningIcon = '/icons/skills/learn-more-logo.svg';
-  protected readonly contactEmail = 'sefan@gmail.com';
+  protected readonly contactEmail = 's.oezbek@soz-studio.de';
 }

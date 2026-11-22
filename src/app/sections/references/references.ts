@@ -27,9 +27,9 @@ export class References {
   protected readonly selectedReference = signal<ReferenceItem | null>(null);
 
   protected readonly references: readonly ReferenceItem[] = [
-    { id: 'v-schuster', name: 'V. Schuster' },
-    { id: 'e-eichinger', name: 'E.Eichinger' },
-    { id: 'i-nuber', name: 'I.Nuber' },
+    { id: 'v-schuster', name: 'M. Mustermann' },
+    { id: 'e-eichinger', name: 'N. Musterfrau' },
+    { id: 'i-nuber', name: 'I. Oernek' },
   ];
 
   /**

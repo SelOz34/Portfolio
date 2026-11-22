@@ -79,20 +79,25 @@
             </p>
 
             <div class="portfolio__buttons">
-              @if (project.githubUrl) {
-                <a
-                  class="portfolio__button"
-                  [href]="project.githubUrl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              @if (project.id === 'join') {
+                <button class="portfolio__button" type="button" (click)="joinDialog.showModal()">
                   Github
-                </a>
+                </button>
+                <button class="portfolio__button" type="button" (click)="joinDialog.showModal()">
+                  Live Test
+                </button>
               } @else {
-                <button class="portfolio__button" type="button" disabled>Github</button>
-              }
+                @if (project.githubUrl) {
+                  <a
+                    class="portfolio__button"
+                    [href]="project.githubUrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Github
+                  </a>
+                }
 
-              @if (project.showLiveTest || project.liveUrl) {
                 @if (project.liveUrl) {
                   <a
                     class="portfolio__button"
@@ -102,8 +107,6 @@
                   >
                     Live Test
                   </a>
-                } @else {
-                  <button class="portfolio__button" type="button" disabled>Live Test</button>
                 }
               }
             </div>
@@ -112,4 +115,42 @@
       }
     </div>
   </div>
+
+  <dialog
+    #joinDialog
+    class="portfolio-dialog"
+    [attr.aria-label]="language() === 'de' ? 'JOIN – in Bearbeitung' : 'JOIN – under construction'"
+    aria-modal="true"
+    (click)="$event.target === joinDialog && joinDialog.close()"
+    (keydown.escape)="joinDialog.close()"
+    tabindex="0"
+  >
+    <button
+      class="portfolio-dialog__close"
+      type="button"
+      (click)="joinDialog.close()"
+      [attr.aria-label]="language() === 'de' ? 'Dialog schließen' : 'Close dialog'"
+    >
+      <span aria-hidden="true">✕</span>
+    </button>
+
+    <button
+      class="portfolio-dialog__image-button"
+      type="button"
+      (click)="joinDialog.close()"
+      [attr.aria-label]="
+        language() === 'de'
+          ? 'Dialog durch Klick auf das Bild schließen'
+          : 'Close dialog by clicking the image'
+      "
+    >
+      <img
+        class="portfolio-dialog__image"
+        src="/img/projects/join-under-construction.png"
+        [alt]="language() === 'de' ? 'JOIN ist noch in Bearbeitung' : 'JOIN is under construction'"
+        width="1906"
+        height="2048"
+      />
+    </button>
+  </dialog>
 </section>

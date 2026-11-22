@@ -42,9 +42,9 @@ export class Portfolio {
         de: 'Basierend auf der PokéAPI – einer einfachen Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.',
         en: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
       },
-      githubUrl: '',
-      liveUrl: '',
-      showLiveTest: false,
+      githubUrl: 'https://github.com/SelOz34/PokeDex',
+      liveUrl: 'https://selimoezbek.developerakademie.net/PokeDex/index.html',
+      showLiveTest: true,
     },
     {
       id: 'pollo-loco',
@@ -56,8 +56,8 @@ export class Portfolio {
         de: 'Ein objektorientiertes Spiel zum Springen, Laufen und Werfen. Hilf Pepe dabei, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.',
         en: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       },
-      githubUrl: '',
-      liveUrl: '',
+      githubUrl: 'https://github.com/SelOz34/Polo-Loco',
+      liveUrl: 'https://selimoezbek.developerakademie.net/PoloLoco/index.html',
       showLiveTest: true,
     },
     {
@@ -72,7 +72,7 @@ export class Portfolio {
       },
       githubUrl: '',
       liveUrl: '',
-      showLiveTest: false,
+      showLiveTest: true,
     },
   ];
 }

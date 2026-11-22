@@ -21,8 +21,8 @@
     "about":  {
                   "title":  "About me",
                   "description":  "Write some information about yourself that is IT related. Why are you passionate about coding?Show a desire to learn new technologies Add a brief description of your problem-solving approach. You can include some key traits like: analytical thinking, creativity, persistence and collaboration.",
-                  "location":  "Based in Munich",
-                  "availability":  "Open to work Remote",
+                  "location":  "Based in Cologne",
+                  "availability":  "Prefer to work Remote",
                   "button":  "Let’s talk",
                   "portraitAlt":  "Portrait of Stefan Engel"
               },
@@ -93,12 +93,14 @@
     "legal":  {
                   "back":  "Back to portfolio",
                   "title":  "Legal Notice",
-                  "imprintTitle":  "Imprint",
-                  "imprintName":  "[Student Names List]",
-                  "imprintAddress":  "[Address of the JOIN operator - e.g. one of the students]",
-                  "imprintCity":  "[Postcode and city]",
-                  "boardTitle":  "Exploring the Board",
-                  "boardEmail":  "Email: [Email]",
+                  "imprintTitle":  "Information pursuant to § 5 DDG",
+                  "imprintName":  "Selim Özbek",
+                  "imprintAddress":  "Frankfurter Straße 75",
+                  "imprintCity":  "51065 Cologne, Germany",
+                  "boardTitle":  "Contact",
+                  "boardMobile":  "Mobile phone: +49 176 73869071",
+                  "boardPhone":  "Phone: +49 221 2223249",
+                  "boardEmail":  "Email: s.oezbek@soz-studio.de",
                   "acceptanceTitle":  "Acceptance of terms",
                   "acceptanceBefore":  "By accessing and using",
                   "acceptanceAfter":  "(Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice.",
@@ -122,7 +124,7 @@
                   "indemnityBefore":  "You agree to indemnify, defend and hold harmless us, the listed students, the",
                   "indemnityMiddle":  "and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of",
                   "indemnityAfter":  "and/or your breach of this Legal Notice.",
-                  "closing":  "For any questions or notices, please contact us at [Contact Email].",
+                  "closing":  "For questions or messages, please contact me at s.oezbek@soz-studio.de.",
                   "templateDate":  "Date: July 26, 2025"
               },
     "privacy":  {

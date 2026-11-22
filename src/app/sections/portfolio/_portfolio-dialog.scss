@@ -34,6 +34,20 @@
   cursor: pointer;
 }
 
+.portfolio-dialog__image-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.portfolio-dialog__image-button:focus-visible {
+  outline: 2px solid #00bc8f;
+  outline-offset: 4px;
+}
+
 .portfolio-dialog__image {
   display: block;
   width: 100%;

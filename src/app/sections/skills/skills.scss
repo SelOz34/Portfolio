@@ -266,6 +266,10 @@
     white-space: nowrap;
   }
 
+  .skills__title:lang(de) {
+    font-size: clamp(24px, 7vw, 30px);
+  }
+
   .skills__footer-text {
     overflow-wrap: anywhere;
   }

@@ -58,7 +58,7 @@
 .privacy__title {
   margin: 0 0 35px;
   font-family: var(--font-heading);
-  font-size: clamp(45px, 7vw, 78px);
+  font-size: clamp(28px, 3.5vw, 48px);
   font-weight: 800;
   line-height: 1.1;
 }
@@ -161,7 +161,7 @@
   }
 
   .privacy__title {
-    font-size: clamp(1.75rem, 7vw, 3rem);
+    font-size: clamp(28px, 3.5vw, 48px);
     line-height: 1.1;
     max-width: 100%;
     overflow-wrap: anywhere;

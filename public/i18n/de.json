@@ -128,48 +128,58 @@
                   "templateDate":  "Datum der Figma-Vorlage: 26. Juli 2025"
               },
     "privacy":  {
-                    "draftText":  "Diese Datenschutzerklärung enthält noch Platzhalter. Sie muss vor der Veröffentlichung der Website vervollständigt und geprüft werden.",
-                    "sections":  {
-                                     "contact":  {
-                                                     "text":  "[Verarbeitung von Kontaktanfragen erläutern, einschließlich des später aktivierten Kontaktformulars, Empfängern, Rechtsgrundlage und Speicherdauer.]",
-                                                     "title":  "Kontaktanfragen"
-                                                 },
-                                     "controller":  {
-                                                        "text":  "[Name und Kontaktdaten der verantwortlichen Person oder Organisation ergänzen.]",
-                                                        "title":  "Verantwortliche Stelle"
-                                                    },
-                                     "authority":  {
-                                                       "text":  "Unter den gesetzlichen Voraussetzungen besteht das Recht, sich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren. [Zuständige Angaben prüfen und ergänzen.]",
-                                                       "title":  "Beschwerderecht bei einer Aufsichtsbehörde"
-                                                   },
-                                     "storage":  {
-                                                     "text":  "[Browserspeicherung einschließlich der gespeicherten Sprachauswahl sowie etwaige Cookies oder vergleichbare Technologien prüfen und erläutern.]",
-                                                     "title":  "Lokale Speicherung und Cookies"
-                                                 },
-                                     "retention":  {
-                                                       "text":  "[Jeweilige Speicherfristen oder Kriterien für ihre Festlegung erläutern.]",
-                                                       "title":  "Speicherdauer und Löschung"
-                                                   },
-                                     "hosting":  {
-                                                     "text":  "[Hosting-Anbieter, relevante Datenverarbeitungen und Rechtsgrundlage ergänzen.]",
-                                                     "title":  "Hosting der Website"
-                                                 },
-                                     "external":  {
-                                                      "text":  "[Tatsächlich eingesetzte Dienste, eingebundene Inhalte, Datenübermittlungen und gegebenenfalls Schutzmaßnahmen ergänzen. GitHub, LinkedIn und die spätere Supabase-Nutzung prüfen.]",
-                                                      "title":  "Externe Dienste und Verlinkungen"
-                                                  },
-                                     "logs":  {
-                                                  "text":  "[Prüfen und beschreiben, ob Serverprotokolle erfasst werden, welche Daten betroffen sind, zu welchen Zwecken, auf welcher Rechtsgrundlage und wie lange sie gespeichert werden.]",
-                                                  "title":  "Server-Logdateien"
-                                              },
-                                     "rights":  {
-                                                    "text":  "Je nach gesetzlichen Voraussetzungen bestehen insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Eine erteilte Einwilligung kann widerrufen werden. [Anwendbare Einzelheiten und Kontaktweg ergänzen.]",
-                                                    "title":  "Deine Datenschutzrechte"
-                                                }
-                                 },
-                    "back":  "Zurück zum Portfolio",
-                    "draftTitle":  "Entwurfsstatus",
-                    "title":  "Datenschutzerklärung",
-                    "intro":  "Informationen über die Verarbeitung personenbezogener Daten auf dieser Website. Dieses Dokument befindet sich noch im Entwurfsstadium."
-                }
+    "sections": {
+      "general": {
+        "title": "1. Allgemeine Hinweise",
+        "text": "Der Schutz deiner personenbezogenen Daten ist mir wichtig. In dieser Datenschutzerklärung informiere ich dich darüber, welche personenbezogenen Daten beim Besuch meiner Portfolio-Website verarbeitet werden, zu welchen Zwecken dies geschieht und welche Rechte dir zustehen.\n\nDiese Website dient der persönlichen Präsentation meiner Fähigkeiten, Projekte und Erfahrungen im Bereich der Frontend-Entwicklung sowie der Kontaktaufnahme im Zusammenhang mit beruflichen Möglichkeiten.\n\nPersonenbezogene Daten sind alle Informationen, mit denen eine natürliche Person direkt oder indirekt identifiziert werden kann."
+      },
+      "controller": {
+        "title": "2. Verantwortlicher",
+        "text": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:\n\nSelim Özbek\nFrankfurter Straße 75\n51065 Köln\nDeutschland\n\nE-Mail: s.oezbek@soz-studio.de"
+      },
+      "hosting": {
+        "title": "3. Hosting und Bereitstellung der Website",
+        "text": "Beim Aufrufen dieser Website werden technisch notwendige Daten zwischen deinem Browser und dem Webserver übertragen. Dazu kann insbesondere deine IP-Adresse gehören.\n\nDie Verarbeitung dient dazu, die Website bereitzustellen, technische Fehler zu erkennen und die Sicherheit sowie Stabilität des Angebots zu gewährleisten.\n\nRechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Mein berechtigtes Interesse liegt im sicheren und zuverlässigen Betrieb meiner Portfolio-Website.\n\nHosting-Anbieter: [Vor Veröffentlichung ergänzen]\n\nSoweit der Hosting-Anbieter personenbezogene Daten in meinem Auftrag verarbeitet, werden die hierfür erforderlichen datenschutzrechtlichen Vereinbarungen getroffen."
+      },
+      "logs": {
+        "title": "4. Server-Logdateien",
+        "text": "Beim Besuch der Website können durch den Hosting-Anbieter Server-Logdateien erstellt werden. Diese können beispielsweise folgende Informationen enthalten:\n\n• IP-Adresse\n• Datum und Uhrzeit des Zugriffs\n• Aufgerufene Seiten und Dateien\n• Browsertyp und Browserversion\n• Betriebssystem\n• Referrer-URL\n• Technische Status- und Fehlermeldungen\n\nSoweit solche Protokolle erhoben werden, erfolgt dies zur Sicherstellung des technischen Betriebs, zur Fehleranalyse und zur Abwehr missbräuchlicher Zugriffe auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.\n\nDie tatsächlichen Protokollierungs- und Löschfristen richten sich nach den Einstellungen des Hosting-Anbieters und sind vor der Veröffentlichung zu ergänzen."
+      },
+      "contact": {
+        "title": "5. Kontaktaufnahme",
+        "text": "Du kannst mich über die auf dieser Website angegebenen Kontaktdaten erreichen.\n\nWenn du mir eine E-Mail schreibst, verarbeite ich die von dir übermittelten Daten, insbesondere deine E-Mail-Adresse, den Nachrichteninhalt und gegebenenfalls deinen Namen, ausschließlich zur Bearbeitung deiner Anfrage und zur weiteren Kommunikation.\n\nRechtsgrundlage ist in der Regel Art. 6 Abs. 1 lit. f DSGVO. Soweit die Kommunikation der Durchführung vorvertraglicher Maßnahmen auf deine Anfrage dient, kann Art. 6 Abs. 1 lit. b DSGVO einschlägig sein.\n\nDas auf der Website dargestellte Kontaktformular ist derzeit noch nicht für einen tatsächlichen Nachrichtenversand aktiviert. Eine Übermittlung von Formularnachrichten an einen Backend-Dienst findet in der aktuellen Implementierung nicht statt."
+      },
+      "storage": {
+        "title": "6. Lokale Speicherung und Cookies",
+        "text": "Meine Website speichert die von dir gewählte Spracheinstellung (Deutsch oder Englisch) lokal in deinem Browser. Hierfür wird die Web-Storage-Technologie localStorage verwendet.\n\nDiese Speicherung dient dazu, deine Spracheinstellung bei einem erneuten Besuch beizubehalten. Die Sprachpräferenz kann über die Einstellungen beziehungsweise durch das Löschen der Website-Daten in deinem Browser entfernt werden.\n\nFür den Zugriff auf beziehungsweise die Speicherung von Informationen auf deinem Endgerät gelten die Anforderungen des § 25 TDDDG. Eine Einwilligung ist unter anderem dann nicht erforderlich, wenn die jeweilige Speicherung für die Bereitstellung eines ausdrücklich gewünschten Dienstes unbedingt erforderlich ist.\n\nOb darüber hinaus Cookies oder andere Speichertechnologien durch den Hosting-Anbieter oder zusätzlich eingebundene Dienste verwendet werden, ist vor der Veröffentlichung zu prüfen."
+      },
+      "external": {
+        "title": "7. Externe Links",
+        "text": "Diese Website enthält Links zu externen Plattformen und Projektseiten, beispielsweise GitHub oder zu Live-Demonstrationen meiner Projekte.\n\nBeim bloßen Anzeigen eines gewöhnlichen externen Links wird dadurch noch keine Verbindung zu dessen Zielseite hergestellt. Wenn du einen solchen Link aufrufst, gelten die Datenschutzbestimmungen des jeweiligen Anbieters.\n\nFür die Verarbeitung personenbezogener Daten auf externen Websites sind deren jeweilige Betreiber verantwortlich."
+      },
+      "retention": {
+        "title": "8. Speicherdauer und Löschung",
+        "text": "Personenbezogene Daten werden nur so lange gespeichert, wie dies für die jeweiligen Verarbeitungszwecke erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.\n\nDaten aus persönlichen Kontaktanfragen werden gelöscht, sobald die Bearbeitung abgeschlossen ist und keine gesetzlichen oder sonstigen berechtigten Gründe für eine weitere Aufbewahrung vorliegen.\n\nKonkrete Aufbewahrungsfristen für Server-Logdateien sind entsprechend den tatsächlichen Einstellungen des Hosting-Anbieters zu ergänzen."
+      },
+      "rights": {
+        "title": "9. Deine Datenschutzrechte",
+        "text": "Im Rahmen der gesetzlichen Voraussetzungen stehen dir insbesondere folgende Rechte zu:\n\n• Auskunft (Art. 15 DSGVO): Du kannst Informationen über die Verarbeitung deiner personenbezogenen Daten verlangen.\n• Berichtigung (Art. 16 DSGVO): Du kannst die Korrektur unrichtiger Daten verlangen.\n• Löschung (Art. 17 DSGVO): Du kannst unter bestimmten Voraussetzungen die Löschung deiner Daten verlangen.\n• Einschränkung der Verarbeitung (Art. 18 DSGVO): Du kannst unter bestimmten Voraussetzungen eine Einschränkung verlangen.\n• Datenübertragbarkeit (Art. 20 DSGVO): Du kannst unter den gesetzlichen Voraussetzungen deine bereitgestellten Daten in einem geeigneten Format erhalten.\n• Widerspruch (Art. 21 DSGVO): Du kannst unter den gesetzlichen Voraussetzungen einer Datenverarbeitung widersprechen.\n\nSoweit eine Verarbeitung auf deiner Einwilligung beruht, kannst du diese jederzeit mit Wirkung für die Zukunft widerrufen.\n\nZur Wahrnehmung deiner Rechte kannst du dich per E-Mail an s.oezbek@soz-studio.de wenden."
+      },
+      "authority": {
+        "title": "10. Beschwerderecht bei einer Aufsichtsbehörde",
+        "text": "Du hast das Recht, dich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren, wenn du der Ansicht bist, dass die Verarbeitung deiner personenbezogenen Daten gegen geltendes Datenschutzrecht verstößt.\n\nFür Nordrhein-Westfalen ist die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW) eine zuständige Aufsichtsbehörde."
+      },
+      "security": {
+        "title": "11. Datensicherheit",
+        "text": "Ich lege Wert auf den Schutz personenbezogener Daten und berücksichtige angemessene technische und organisatorische Sicherheitsmaßnahmen.\n\nBei einer öffentlichen Bereitstellung der Website sollte eine verschlüsselte HTTPS-Verbindung eingesetzt werden. Die konkret implementierten Sicherheitsmaßnahmen hängen auch vom verwendeten Hosting-Anbieter ab."
+      },
+      "changes": {
+        "title": "12. Änderungen dieser Datenschutzerklärung",
+        "text": "Ich behalte mir vor, diese Datenschutzerklärung anzupassen, wenn sich rechtliche Anforderungen oder die technische Funktionsweise meiner Website ändern.\n\nDies gilt insbesondere für die zukünftige Aktivierung des Kontaktformulars oder die Einbindung zusätzlicher Dienste."
+      }
+    },
+    "back": "Zurück zum Portfolio",
+    "title": "Datenschutzerklärung",
+    "intro": "Informationen zur Verarbeitung personenbezogener Daten auf meiner Portfolio-Website."
+  }
 }

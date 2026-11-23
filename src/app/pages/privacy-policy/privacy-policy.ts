@@ -21,6 +21,7 @@ export class PrivacyPolicy {
   protected readonly language = this.languageService.language;
 
   protected readonly sections = [
+    'general',
     'controller',
     'hosting',
     'logs',
@@ -30,6 +31,8 @@ export class PrivacyPolicy {
     'retention',
     'rights',
     'authority',
+    'security',
+    'changes',
   ] as const;
 
   protected setLanguage(language: Language): void {

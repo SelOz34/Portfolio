@@ -3,7 +3,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 
 import type { Language } from '../language-switch/language-switch';
 
-export type NavigationTarget = 'about' | 'skills' | 'portfolio';
+export type NavigationTarget = 'about' | 'skills' | 'portfolio' | 'contact';
 export type MenuPhase = 'closed' | 'opening' | 'open' | 'closing';
 
 @Component({

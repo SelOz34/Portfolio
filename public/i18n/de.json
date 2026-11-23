@@ -1,133 +1,139 @@
 {
-    "navigation":  {
-                       "about":  "Über mich",
-                       "skills":  "Meine Fähigkeiten",
-                       "portfolio":  "Portfolio",
-                       "contact":  "Kontakt"
-                   },
-    "common":  {
-                   "backToTop":  "Nach oben",
-                   "legalNotice":  "Impressum",
-                   "privacyPolicy":  "Datenschutzerklärung"
-               },
-    "hero":  {
-                 "titleFirst":  "Frontend",
-                 "titleSecond":  "Entwickler",
-                 "emailLabel":  "E-Mail an Stefan Engel senden",
-                 "scrollLabel":  "Zu Über mich scrollen",
-                 "scrollFirst":  "Nach",
-                 "scrollSecond":  "unten"
-             },
-    "about":  {
-                  "title":  "Über mich",
-                  "description":  "Als leidenschaftlicher Frontend Developer begeistert es mich, kreative Ideen in moderne, benutzerfreundliche und funktionale Webanwendungen zu verwandeln. Besonders spannend finde ich die Verbindung aus ansprechendem Design, durchdachter Benutzerführung und sauberem, strukturiertem Code. Ich arbeite mit modernen Webtechnologien wie HTML, CSS, JavaScript, TypeScript und Angular und entwickle meine Fähigkeiten kontinuierlich weiter. Dabei lege ich großen Wert auf Responsive Design, Performance und Barrierefreiheit, um digitale Erlebnisse zu schaffen, die auf unterschiedlichen Geräten überzeugen. Neue Herausforderungen gehe ich analytisch, strukturiert und lösungsorientiert an. Kreativität, Ausdauer und die Bereitschaft, ständig dazuzulernen, gehören zu meinen Stärken. Gleichzeitig schätze ich den Austausch im Team, denn gute Software entsteht für mich durch gemeinsame Ideen, konstruktives Feedback und kontinuierliche Verbesserung. Mein Ziel ist es, meine Leidenschaft für die Frontend-Entwicklung in einem professionellen Team einzubringen, mich fachlich weiterzuentwickeln und aktiv an innovativen digitalen Lösungen mitzuwirken.",
-                  "location":  "Wohnhaft in Köln",
-                  "availability":  "Arbeite bevorzugt remote",
-                  "button":  "Lass uns sprechen",
-                  "portraitAlt":  "Porträt von Stefan Engel"
-              },
-    "skills":  {
-                   "title":  "Meine Skills",
-                   "footerQuestion":  "Fehlt ein bestimmter Skill?",
-                   "contactButton":  "Kontaktiert mich",
-                   "footerLearning":  "Ich bin immer bereit, Neues zu lernen!"
-               },
-    "portfolio":  {
-                      "title":  "Portfolio",
-                      "description":  "Entdecke hier eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten in der Praxis zu erleben.",
-                      "projects":  {
-                                       "pokedex":  {
-                                                       "imageAlt":  "Vorschau des Pokedex-Projekts"
-                                                   },
-                                       "pollo-loco":  {
-                                                          "imageAlt":  "Vorschau des Pollo-Loco-Projekts"
-                                                      },
-                                       "join":  {
-                                                    "imageAlt":  "Vorschau des Join-Projekts"
-                                                }
-                                   }
-                  },
-    "references":  {
-                       "title":  "Referenzen",
-                       "description":  "Ich arbeite sowohl eigenständig als auch im Team sehr gerne. Hier erfährst du, was meine Kollegen über die Zusammenarbeit mit mir sagen.",
-                       "openDetails":  "Vollständige Referenz lesen",
-                       "closeDetails":  "Referenz schließen",
-                       "items":  {
-                                     "v-schuster":  {
-                                                        "role":  "Teamkollege",
-                                                        "quote":  "Michael hat das Team mit seiner hervorragenden Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne seinen Einsatz wären wir nicht so weit gekommen."
-                                                    },
-                                     "e-eichinger":  {
-                                                         "role":  "Teamkollege",
-                                                         "quote":  "Michi war ein großartiger Teamkollege bei DA. Sein engagierter Einsatz und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreicht haben."
-                                                     },
-                                     "i-nuber":  {
-                                                     "role":  "Frontend-Entwickler",
-                                                     "quote":  "Es war eine große Freude, mit Michael zusammenzuarbeiten. Er versteht es, Teammitglieder zu motivieren und zu ermutigen, ihr Bestes zu geben, und bringt immer neue Ideen ins Brainstorming ein. Auch das Wohlbefinden der Teammitglieder lag ihm am Herzen. Er hatte stets ein offenes Ohr, war jederzeit hilfsbereit und brachte außerdem einen großartigen Sinn für Humor mit."
-                                                 }
-                                 }
-                   },
-    "contact":  {
-                    "title":  "Sag Hallo!",
-                    "introTitle":  "Möchtest du ein neues Projekt besprechen?",
-                    "introText":  "Sag Hallo! Lass uns über deine Ideen sprechen und sie gemeinsam umsetzen.",
-                    "nameLabel":  "Dein Name",
-                    "emailLabel":  "Deine E-Mail",
-                    "messageLabel":  "Deine Nachricht",
-                    "errors":  {
-                                   "nameRequired":  "Bitte gib deinen Namen ein.",
-                                   "emailInvalid":  "Bitte gib eine gültige E-Mail-Adresse ein.",
-                                   "emailRequired":  "Bitte gib deine E-Mail-Adresse ein.",
-                                   "messageRequired":  "Bitte gib eine Nachricht ein.",
-                                   "privacyRequired":  "Bitte stimme der Datenschutzerklärung zu."
-                               },
-                    "privacyBefore":  "Ich habe die ",
-                    "privacyAfter":  " gelesen und stimme der dort beschriebenen Verarbeitung meiner Daten zu.",
-                    "submit":  "Nachricht senden",
-                    "submissionUnavailable":  "Der Nachrichtenversand ist noch nicht verfügbar. Deine Nachricht wurde nicht gesendet.",
-                    "socialsLabel":  "Kontakt und Social-Media-Profile",
-                    "githubLabel":  "GitHub-Profil",
-                    "mailLabel":  "E-Mail senden",
-                    "linkedinLabel":  "LinkedIn"
-                },
-    "legal":  {
-                  "back":  "Zurück zum Portfolio",
-                  "title":  "Impressum",
-                  "imprintTitle":  "Angaben gemäß § 5 DDG",
-                  "imprintName":  "Selim Özbek",
-                  "imprintAddress":  "Frankfurter Straße 75",
-                  "imprintCity":  "51065 Köln",
-                  "boardTitle":  "Kontakt",
-                  "boardMobile":  "Mobiltelefon: +49 176 73869071",
-                  "boardPhone":  "Telefon: +49 221 2223249",
-                  "boardEmail":  "E-Mail: s.oezbek@soz-studio.de",
-                  "acceptanceTitle":  "Annahme der Nutzungsbedingungen",
-                  "acceptanceBefore":  "Durch den Zugriff auf und die Nutzung von",
-                  "acceptanceAfter":  "(Produkt) erkennst du die folgenden Nutzungsbedingungen sowie gegebenenfalls bereitgestellte Richtlinien und Änderungen an. Wir, die aufgeführten Studierenden, können diese Bedingungen von Zeit zu Zeit ohne vorherige Ankündigung ändern.",
-                  "scopeTitle":  "Umfang und Eigentum am Produkt",
-                  "scopeAfterPortfolio":  "wurde als studentisches Gruppenprojekt im Rahmen eines Webentwicklungs-Bootcamps der",
-                  "scopeAfterAcademy":  "entwickelt. Es dient Bildungszwecken und ist nicht für eine umfangreiche private oder geschäftliche Nutzung vorgesehen. Wir können daher keine durchgehende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder andere Qualitätsmerkmale garantieren.",
-                  "scopeDesignBefore":  "Das Design von",
-                  "scopeDesignMiddle":  "ist Eigentum der",
-                  "scopeDesignAfter":  "Eine unberechtigte Nutzung, Vervielfältigung, Veränderung, Verbreitung oder Nachbildung des Designs ist untersagt.",
-                  "proprietaryTitle":  "Eigentumsrechte",
-                  "proprietaryBefore":  "Abgesehen vom Design, dessen Rechte bei der",
-                  "proprietaryMiddle":  "liegen, behalten wir, die aufgeführten Studierenden, sämtliche eigenen Rechte an",
-                  "proprietaryAfter":  "einschließlich damit verbundenen urheberrechtlich geschützten Materials, Marken und sonstiger geschützter Informationen.",
-                  "useTitle":  "Nutzung des Produkts",
-                  "useAfterFirst":  "darf nur für rechtmäßige Zwecke und im Einklang mit den geltenden Gesetzen und Vorschriften genutzt werden. Eine Verwendung von",
-                  "useAfterSecond":  "für rechtswidrige Aktivitäten oder um andere zu belästigen, zu schädigen, zu bedrohen oder einzuschüchtern, ist untersagt. Du bist für deine Interaktionen mit anderen Nutzern von",
-                  "disclaimerTitle":  "Gewährleistungsausschluss und Haftungsbeschränkung",
-                  "disclaimerAfterPortfolio":  "wird im Rahmen dieser Vorlage ohne ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, soweit rechtlich zulässig. Weder wir, die aufgeführten Studierenden, noch die",
-                  "disclaimerAfterAcademy":  "übernehmen im gesetzlich zulässigen Umfang eine Haftung für unmittelbare oder mittelbare Schäden, Folgeschäden oder sonstige Verluste aus der Nutzung oder Leistung von",
-                  "indemnityTitle":  "Freistellung",
-                  "indemnityBefore":  "Du erklärst dich nach Maßgabe des anwendbaren Rechts bereit, uns, die aufgeführten Studierenden, die",
-                  "indemnityMiddle":  "sowie verbundene Unternehmen, Partner und Beschäftigte hinsichtlich Ansprüchen, Schäden, Kosten oder Verbindlichkeiten freizustellen, die aus deiner Nutzung von",
-                  "indemnityAfter":  "und/oder einem Verstoß gegen diese Nutzungsbedingungen entstehen.",
-                  "closing":  "Bei Fragen oder Mitteilungen kontaktiere mich bitte unter s.oezbek@soz-studio.de.",
-                  "templateDate":  "Datum der Figma-Vorlage: 26. Juli 2025"
-              },
-    "privacy":  {
+  "navigation": {
+    "about": "Über mich",
+    "skills": "Meine Fähigkeiten",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "common": {
+    "backToTop": "Nach oben",
+    "legalNotice": "Impressum",
+    "privacyPolicy": "Datenschutzerklärung"
+  },
+  "hero": {
+    "titleFirst": "Frontend",
+    "titleSecond": "Entwickler",
+    "emailLabel": "Zum Kontaktformular",
+    "scrollLabel": "Zu Über mich scrollen",
+    "scrollFirst": "Nach",
+    "scrollSecond": "unten"
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Als leidenschaftlicher Frontend Developer begeistert es mich, kreative Ideen in moderne, benutzerfreundliche und funktionale Webanwendungen zu verwandeln. Besonders spannend finde ich die Verbindung aus ansprechendem Design, durchdachter Benutzerführung und sauberem, strukturiertem Code. Ich arbeite mit modernen Webtechnologien wie HTML, CSS, JavaScript, TypeScript und Angular und entwickle meine Fähigkeiten kontinuierlich weiter. Dabei lege ich großen Wert auf Responsive Design, Performance und Barrierefreiheit, um digitale Erlebnisse zu schaffen, die auf unterschiedlichen Geräten überzeugen. Neue Herausforderungen gehe ich analytisch, strukturiert und lösungsorientiert an. Kreativität, Ausdauer und die Bereitschaft, ständig dazuzulernen, gehören zu meinen Stärken. Gleichzeitig schätze ich den Austausch im Team, denn gute Software entsteht für mich durch gemeinsame Ideen, konstruktives Feedback und kontinuierliche Verbesserung. Mein Ziel ist es, meine Leidenschaft für die Frontend-Entwicklung in einem professionellen Team einzubringen, mich fachlich weiterzuentwickeln und aktiv an innovativen digitalen Lösungen mitzuwirken.",
+    "location": "Wohnhaft in Köln",
+    "availability": "Arbeite bevorzugt remote",
+    "button": "Lass uns sprechen",
+    "portraitAlt": "Porträt von Selim Özbek"
+  },
+  "skills": {
+    "title": "Meine Skills",
+    "footerQuestion": "Fehlt ein bestimmter Skill?",
+    "contactButton": "Kontaktiert mich",
+    "footerLearning": "Ich bin immer bereit, Neues zu lernen!"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Entdecke hier eine Auswahl meiner Arbeiten – interagiere mit den Projekten, um meine Fähigkeiten in der Praxis zu erleben.",
+    "projects": {
+      "pokedex": {
+        "imageAlt": "Vorschau des Pokedex-Projekts"
+      },
+      "pollo-loco": {
+        "imageAlt": "Vorschau des Pollo-Loco-Projekts"
+      },
+      "join": {
+        "imageAlt": "Vorschau des Join-Projekts"
+      }
+    }
+  },
+  "references": {
+    "title": "Referenzen",
+    "description": "Ich arbeite sowohl eigenständig als auch im Team sehr gerne. Hier erfährst du, was meine Kollegen über die Zusammenarbeit mit mir sagen.",
+    "openDetails": "Vollständige Referenz lesen",
+    "closeDetails": "Referenz schließen",
+    "items": {
+      "v-schuster": {
+        "role": "Teamkollege",
+        "quote": "Michael hat das Team mit seiner hervorragenden Organisation und klaren Kommunikation wirklich zusammengehalten. Ohne seinen Einsatz wären wir nicht so weit gekommen."
+      },
+      "e-eichinger": {
+        "role": "Teamkollege",
+        "quote": "Michi war ein großartiger Teamkollege bei DA. Sein engagierter Einsatz und seine Bereitschaft, Verantwortung zu übernehmen, haben maßgeblich dazu beigetragen, dass wir unsere Ziele erreicht haben."
+      },
+      "i-nuber": {
+        "role": "Frontend-Entwickler",
+        "quote": "Es war eine große Freude, mit Michael zusammenzuarbeiten. Er versteht es, Teammitglieder zu motivieren und zu ermutigen, ihr Bestes zu geben, und bringt immer neue Ideen ins Brainstorming ein. Auch das Wohlbefinden der Teammitglieder lag ihm am Herzen. Er hatte stets ein offenes Ohr, war jederzeit hilfsbereit und brachte außerdem einen großartigen Sinn für Humor mit."
+      }
+    }
+  },
+  "contact": {
+    "title": "Sag Hallo!",
+    "introTitle": "Möchtest du ein neues Projekt besprechen?",
+    "introText": "Sag Hallo! Lass uns über deine Ideen sprechen und sie gemeinsam umsetzen.",
+    "nameLabel": "Dein Name",
+    "emailLabel": "Deine E-Mail",
+    "messageLabel": "Deine Nachricht",
+    "errors": {
+      "nameRequired": "Bitte gib deinen Namen ein.",
+      "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein.",
+      "emailRequired": "Bitte gib deine E-Mail-Adresse ein.",
+      "messageRequired": "Bitte gib eine Nachricht ein.",
+      "privacyRequired": "Bitte stimme der Datenschutzerklärung zu."
+    },
+    "privacyBefore": "Ich habe die ",
+    "privacyAfter": " gelesen und stimme der dort beschriebenen Verarbeitung meiner Daten zu.",
+    "submit": "Nachricht senden",
+    "submissionUnavailable": "Der Nachrichtenversand ist noch nicht verfügbar. Deine Nachricht wurde nicht gesendet.",
+
+    "submissionSending": "Deine Nachricht wird verarbeitet ...",
+    "submissionSimulated": "Lokaler Test erfolgreich. Deine Nachricht wurde verarbeitet, aber es wurde keine E-Mail versendet.",
+    "submissionSuccess": "Deine Nachricht wurde erfolgreich zum Versand angenommen. Vielen Dank!",
+    "submissionFailed": "Deine Nachricht konnte nicht versendet werden. Bitte versuche es später erneut.",
+
+    "socialsLabel": "Kontakt und Social-Media-Profile",
+    "githubLabel": "GitHub-Profil",
+    "mailLabel": "E-Mail senden",
+    "linkedinLabel": "LinkedIn"
+  },
+  "legal": {
+    "back": "Zurück zum Portfolio",
+    "title": "Impressum",
+    "imprintTitle": "Angaben gemäß § 5 DDG",
+    "imprintName": "Selim Özbek",
+    "imprintAddress": "Frankfurter Straße 75",
+    "imprintCity": "51065 Köln",
+    "boardTitle": "Kontakt",
+    "boardMobile": "Mobiltelefon: +49 176 73869071",
+    "boardPhone": "Telefon: +49 221 2223249",
+    "boardEmail": "E-Mail: s.oezbek@soz-studio.de",
+    "acceptanceTitle": "Annahme der Nutzungsbedingungen",
+    "acceptanceBefore": "Durch den Zugriff auf und die Nutzung von",
+    "acceptanceAfter": "(Produkt) erkennst du die folgenden Nutzungsbedingungen sowie gegebenenfalls bereitgestellte Richtlinien und Änderungen an. Wir, die aufgeführten Studierenden, können diese Bedingungen von Zeit zu Zeit ohne vorherige Ankündigung ändern.",
+    "scopeTitle": "Umfang und Eigentum am Produkt",
+    "scopeAfterPortfolio": "wurde als studentisches Gruppenprojekt im Rahmen eines Webentwicklungs-Bootcamps der",
+    "scopeAfterAcademy": "entwickelt. Es dient Bildungszwecken und ist nicht für eine umfangreiche private oder geschäftliche Nutzung vorgesehen. Wir können daher keine durchgehende Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder andere Qualitätsmerkmale garantieren.",
+    "scopeDesignBefore": "Das Design von",
+    "scopeDesignMiddle": "ist Eigentum der",
+    "scopeDesignAfter": "Eine unberechtigte Nutzung, Vervielfältigung, Veränderung, Verbreitung oder Nachbildung des Designs ist untersagt.",
+    "proprietaryTitle": "Eigentumsrechte",
+    "proprietaryBefore": "Abgesehen vom Design, dessen Rechte bei der",
+    "proprietaryMiddle": "liegen, behalten wir, die aufgeführten Studierenden, sämtliche eigenen Rechte an",
+    "proprietaryAfter": "einschließlich damit verbundenen urheberrechtlich geschützten Materials, Marken und sonstiger geschützter Informationen.",
+    "useTitle": "Nutzung des Produkts",
+    "useAfterFirst": "darf nur für rechtmäßige Zwecke und im Einklang mit den geltenden Gesetzen und Vorschriften genutzt werden. Eine Verwendung von",
+    "useAfterSecond": "für rechtswidrige Aktivitäten oder um andere zu belästigen, zu schädigen, zu bedrohen oder einzuschüchtern, ist untersagt. Du bist für deine Interaktionen mit anderen Nutzern von",
+    "disclaimerTitle": "Gewährleistungsausschluss und Haftungsbeschränkung",
+    "disclaimerAfterPortfolio": "wird im Rahmen dieser Vorlage ohne ausdrückliche oder stillschweigende Gewährleistung bereitgestellt, soweit rechtlich zulässig. Weder wir, die aufgeführten Studierenden, noch die",
+    "disclaimerAfterAcademy": "übernehmen im gesetzlich zulässigen Umfang eine Haftung für unmittelbare oder mittelbare Schäden, Folgeschäden oder sonstige Verluste aus der Nutzung oder Leistung von",
+    "indemnityTitle": "Freistellung",
+    "indemnityBefore": "Du erklärst dich nach Maßgabe des anwendbaren Rechts bereit, uns, die aufgeführten Studierenden, die",
+    "indemnityMiddle": "sowie verbundene Unternehmen, Partner und Beschäftigte hinsichtlich Ansprüchen, Schäden, Kosten oder Verbindlichkeiten freizustellen, die aus deiner Nutzung von",
+    "indemnityAfter": "und/oder einem Verstoß gegen diese Nutzungsbedingungen entstehen.",
+    "closing": "Bei Fragen oder Mitteilungen kontaktiere mich bitte unter s.oezbek@soz-studio.de.",
+    "templateDate": "Datum der Figma-Vorlage: 26. Juli 2025"
+  },
+  "privacy": {
     "sections": {
       "general": {
         "title": "1. Allgemeine Hinweise",
@@ -147,7 +153,7 @@
       },
       "contact": {
         "title": "5. Kontaktaufnahme",
-        "text": "Du kannst mich über die auf dieser Website angegebenen Kontaktdaten erreichen.\n\nWenn du mir eine E-Mail schreibst, verarbeite ich die von dir übermittelten Daten, insbesondere deine E-Mail-Adresse, den Nachrichteninhalt und gegebenenfalls deinen Namen, ausschließlich zur Bearbeitung deiner Anfrage und zur weiteren Kommunikation.\n\nRechtsgrundlage ist in der Regel Art. 6 Abs. 1 lit. f DSGVO. Soweit die Kommunikation der Durchführung vorvertraglicher Maßnahmen auf deine Anfrage dient, kann Art. 6 Abs. 1 lit. b DSGVO einschlägig sein.\n\nDas auf der Website dargestellte Kontaktformular ist derzeit noch nicht für einen tatsächlichen Nachrichtenversand aktiviert. Eine Übermittlung von Formularnachrichten an einen Backend-Dienst findet in der aktuellen Implementierung nicht statt."
+        "text": "Du kannst mich über die auf dieser Website angegebenen Kontaktdaten erreichen.\n\nWenn du mir eine E-Mail schreibst, verarbeite ich die von dir übermittelten Daten, insbesondere deine E-Mail-Adresse, den Nachrichteninhalt und gegebenenfalls deinen Namen, ausschließlich zur Bearbeitung deiner Anfrage und zur weiteren Kommunikation.\n\nRechtsgrundlage ist in der Regel Art. 6 Abs. 1 lit. f DSGVO. Soweit die Kommunikation der Durchführung vorvertraglicher Maßnahmen auf deine Anfrage dient, kann Art. 6 Abs. 1 lit. b DSGVO einschlägig sein.\n\nDas Kontaktformular dieser Website verarbeitet die von dir eingegebenen Angaben (Name, E-Mail-Adresse und Nachricht) zur Bearbeitung deiner Kontaktanfrage. Die Angaben werden hierzu an ein PHP-Backend übermittelt und dort serverseitig geprüft.\n\nDer Nachrichtenversand befindet sich derzeit im lokalen Testbetrieb. Dabei werden Anfragen verarbeitet, jedoch keine tatsächlichen E-Mails versendet. Eine dauerhafte Speicherung der Formularnachrichten in einer Datenbank ist nicht vorgesehen.\n\nVor der öffentlichen Aktivierung des E-Mail-Versands wird diese Datenschutzerklärung um die tatsächlich verwendeten Hosting- und E-Mail-Dienstleister sowie gegebenenfalls weitere erforderliche Informationen ergänzt."
       },
       "storage": {
         "title": "6. Lokale Speicherung und Cookies",

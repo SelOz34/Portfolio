@@ -1,9 +1,14 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 
 type ContactField = 'name' | 'email' | 'message';
+
+interface ContactResponse {
+  success?: boolean;
+  simulated?: boolean;
+}
 
 @Component({
   selector: 'app-contact',
@@ -31,7 +36,8 @@ export class Contact {
   };
 
   protected privacyTouched = false;
-  protected submissionNotice = '';
+  protected readonly submissionNotice = signal('');
+  protected readonly isSubmitting = signal(false);
 
   protected get nameValid(): boolean {
     return this.name.trim().length > 0;
@@ -78,12 +84,62 @@ export class Contact {
     return this.privacyTouched && !this.privacyAccepted ? 'contact.errors.privacyRequired' : '';
   }
 
-  protected onSubmit(): void {
-    if (!this.canSubmit) {
+  protected async onSubmit(): Promise<void> {
+    if (!this.canSubmit || this.isSubmitting()) {
       return;
     }
 
-    this.submissionNotice = 'contact.submissionUnavailable';
+    this.isSubmitting.set(true);
+    this.submissionNotice.set('contact.submissionSending');
+
+    try {
+      const response = await fetch('/contact.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: this.name.trim(),
+          email: this.email.trim(),
+          message: this.message.trim(),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Contact request failed');
+      }
+
+      const result: ContactResponse = await response.json();
+
+      if (result.success !== true) {
+        throw new Error('Contact request was not successful');
+      }
+
+      if (result.simulated === true) {
+        this.submissionNotice.set('contact.submissionSimulated');
+        return;
+      }
+
+      if (result.simulated !== false) {
+        throw new Error('Unknown delivery status');
+      }
+
+      this.submissionNotice.set('contact.submissionSuccess');
+
+      this.name = '';
+      this.email = '';
+      this.message = '';
+      this.privacyAccepted = false;
+
+      this.touched.name = false;
+      this.touched.email = false;
+      this.touched.message = false;
+      this.privacyTouched = false;
+    } catch {
+      this.submissionNotice.set('contact.submissionFailed');
+    } finally {
+      this.isSubmitting.set(false);
+    }
   }
 
   protected scrollToTop(): void {

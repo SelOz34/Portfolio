@@ -1,133 +1,139 @@
 {
-    "navigation":  {
-                       "about":  "About me",
-                       "skills":  "My skills",
-                       "portfolio":  "Portfolio",
-                       "contact":  "Contact"
-                   },
-    "common":  {
-                   "backToTop":  "Back to top",
-                   "legalNotice":  "Legal notice",
-                   "privacyPolicy":  "Privacy policy"
-               },
-    "hero":  {
-                 "titleFirst":  "Frontend",
-                 "titleSecond":  "Developer",
-                 "emailLabel":  "Send email to Stefan Engel",
-                 "scrollLabel":  "Scroll down to About me",
-                 "scrollFirst":  "Scroll",
-                 "scrollSecond":  "Down"
-             },
-    "about":  {
-                  "title":  "About me",
-                  "description":  "As a passionate Frontend Developer, I enjoy transforming creative ideas into modern, user-friendly, and functional web applications. What excites me most is combining appealing design, intuitive user experiences, and clean, well-structured code. I work with modern web technologies such as HTML, CSS, JavaScript, TypeScript, and Angular, and I continuously expand my knowledge and technical skills. I focus on responsive design, performance, and accessibility to create digital experiences that work seamlessly across devices. I approach new challenges with an analytical mindset, a structured workflow, and a solution-oriented attitude. Creativity, persistence, and a strong willingness to learn are among my key strengths. I also value collaboration and teamwork, as I believe great software is built through shared ideas, constructive feedback, and continuous improvement. My goal is to bring my passion for frontend development to a professional team, keep growing as a developer, and actively help build innovative digital solutions.",
-                  "location":  "Based in Cologne",
-                  "availability":  "Prefer to work Remote",
-                  "button":  "Let’s talk",
-                  "portraitAlt":  "Portrait of Stefan Engel"
-              },
-    "skills":  {
-                   "title":  "My skills",
-                   "footerQuestion":  "Don’t see the skill you need?",
-                   "contactButton":  "Contact me",
-                   "footerLearning":  "I’m always ready to learn!"
-               },
-    "portfolio":  {
-                      "title":  "Portfolio",
-                      "description":  "Explore a selection of my work here - Interact with projects to see my skills in action.",
-                      "projects":  {
-                                       "pokedex":  {
-                                                       "imageAlt":  "Preview of the Pokedex project"
-                                                   },
-                                       "pollo-loco":  {
-                                                          "imageAlt":  "Preview of the Pollo Loco project"
-                                                      },
-                                       "join":  {
-                                                    "imageAlt":  "Preview of the Join project"
-                                                }
-                                   }
-                  },
-    "references":  {
-                       "title":  "References",
-                       "description":  "I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.",
-                       "openDetails":  "Read full reference",
-                       "closeDetails":  "Close reference",
-                       "items":  {
-                                     "v-schuster":  {
-                                                        "role":  "Team Partner",
-                                                        "quote":  "Michael really kept the team together with his great organization and clear communication. We wouldn\u0027t have got this far without his commitment."
-                                                    },
-                                     "e-eichinger":  {
-                                                         "role":  "Team Partner",
-                                                         "quote":  "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals."
-                                                     },
-                                     "i-nuber":  {
-                                                     "role":  "Frontend Engineer",
-                                                     "quote":  "It was a great pleasure to work with Michael. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well."
-                                                 }
-                                 }
-                   },
-    "contact":  {
-                    "title":  "Say Hi!",
-                    "introTitle":  "Want to discuss a new project?",
-                    "introText":  "Say hello! let\u0027s discuss your ideas and make it happen",
-                    "nameLabel":  "Your name",
-                    "emailLabel":  "Your email",
-                    "messageLabel":  "Your message",
-                    "errors":  {
-                                   "nameRequired":  "Your name is required",
-                                   "emailInvalid":  "Please enter a valid email address",
-                                   "emailRequired":  "Your email is required",
-                                   "messageRequired":  "Your message is empty",
-                                   "privacyRequired":  "Please accept the privacy policy."
-                               },
-                    "privacyBefore":  "I\u0027ve read the ",
-                    "privacyAfter":  " and agree to the processing of my data as outlined.",
-                    "submit":  "Send message",
-                    "submissionUnavailable":  "Message sending is not available yet. Your message has not been sent.",
-                    "socialsLabel":  "Contact and social profiles",
-                    "githubLabel":  "GitHub profile",
-                    "mailLabel":  "Send email",
-                    "linkedinLabel":  "LinkedIn"
-                },
-    "legal":  {
-                  "back":  "Back to portfolio",
-                  "title":  "Legal Notice",
-                  "imprintTitle":  "Information pursuant to § 5 DDG",
-                  "imprintName":  "Selim Özbek",
-                  "imprintAddress":  "Frankfurter Straße 75",
-                  "imprintCity":  "51065 Cologne, Germany",
-                  "boardTitle":  "Contact",
-                  "boardMobile":  "Mobile phone: +49 176 73869071",
-                  "boardPhone":  "Phone: +49 221 2223249",
-                  "boardEmail":  "Email: s.oezbek@soz-studio.de",
-                  "acceptanceTitle":  "Acceptance of terms",
-                  "acceptanceBefore":  "By accessing and using",
-                  "acceptanceAfter":  "(Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice.",
-                  "scopeTitle":  "Scope and ownership of the product",
-                  "scopeAfterPortfolio":  "has been developed as part of a student group project in a web development bootcamp at the",
-                  "scopeAfterAcademy":  "It has an educational purpose and is not intended for extensive personal \u0026 business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.",
-                  "scopeDesignBefore":  "The design of",
-                  "scopeDesignMiddle":  "is owned by the",
-                  "scopeDesignAfter":  "Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.",
-                  "proprietaryTitle":  "Proprietary rights",
-                  "proprietaryBefore":  "Aside from the design owned by",
-                  "proprietaryMiddle":  "we, the listed students, retain all proprietary rights in",
-                  "proprietaryAfter":  "including any associated copyrighted material, trademarks, and other proprietary information.",
-                  "useTitle":  "Use of the product",
-                  "useAfterFirst":  "is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of",
-                  "useAfterSecond":  "for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of",
-                  "disclaimerTitle":  "Disclaimer of warranties and limitation of liability",
-                  "disclaimerAfterPortfolio":  "is provided \"as is\" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the",
-                  "disclaimerAfterAcademy":  "be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of",
-                  "indemnityTitle":  "Indemnity",
-                  "indemnityBefore":  "You agree to indemnify, defend and hold harmless us, the listed students, the",
-                  "indemnityMiddle":  "and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of",
-                  "indemnityAfter":  "and/or your breach of this Legal Notice.",
-                  "closing":  "For questions or messages, please contact me at s.oezbek@soz-studio.de.",
-                  "templateDate":  "Date: July 26, 2025"
-              },
-    "privacy":  {
+  "navigation": {
+    "about": "About me",
+    "skills": "My skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "common": {
+    "backToTop": "Back to top",
+    "legalNotice": "Legal notice",
+    "privacyPolicy": "Privacy policy"
+  },
+  "hero": {
+    "titleFirst": "Frontend",
+    "titleSecond": "Developer",
+    "emailLabel": "Go to contact form",
+    "scrollLabel": "Scroll down to About me",
+    "scrollFirst": "Scroll",
+    "scrollSecond": "Down"
+  },
+  "about": {
+    "title": "About me",
+    "description": "As a passionate Frontend Developer, I enjoy transforming creative ideas into modern, user-friendly, and functional web applications. What excites me most is combining appealing design, intuitive user experiences, and clean, well-structured code. I work with modern web technologies such as HTML, CSS, JavaScript, TypeScript, and Angular, and I continuously expand my knowledge and technical skills. I focus on responsive design, performance, and accessibility to create digital experiences that work seamlessly across devices. I approach new challenges with an analytical mindset, a structured workflow, and a solution-oriented attitude. Creativity, persistence, and a strong willingness to learn are among my key strengths. I also value collaboration and teamwork, as I believe great software is built through shared ideas, constructive feedback, and continuous improvement. My goal is to bring my passion for frontend development to a professional team, keep growing as a developer, and actively help build innovative digital solutions.",
+    "location": "Based in Cologne",
+    "availability": "Prefer to work Remote",
+    "button": "Let’s talk",
+    "portraitAlt": "Portrait of Selim Özbek"
+  },
+  "skills": {
+    "title": "My skills",
+    "footerQuestion": "Don’t see the skill you need?",
+    "contactButton": "Contact me",
+    "footerLearning": "I’m always ready to learn!"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "projects": {
+      "pokedex": {
+        "imageAlt": "Preview of the Pokedex project"
+      },
+      "pollo-loco": {
+        "imageAlt": "Preview of the Pollo Loco project"
+      },
+      "join": {
+        "imageAlt": "Preview of the Join project"
+      }
+    }
+  },
+  "references": {
+    "title": "References",
+    "description": "I thrive both independently and as part of a team. Here’s what my colleagues have to say about working with me.",
+    "openDetails": "Read full reference",
+    "closeDetails": "Close reference",
+    "items": {
+      "v-schuster": {
+        "role": "Team Partner",
+        "quote": "Michael really kept the team together with his great organization and clear communication. We wouldn\u0027t have got this far without his commitment."
+      },
+      "e-eichinger": {
+        "role": "Team Partner",
+        "quote": "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals."
+      },
+      "i-nuber": {
+        "role": "Frontend Engineer",
+        "quote": "It was a great pleasure to work with Michael. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well."
+      }
+    }
+  },
+  "contact": {
+    "title": "Say Hi!",
+    "introTitle": "Want to discuss a new project?",
+    "introText": "Say hello! let\u0027s discuss your ideas and make it happen",
+    "nameLabel": "Your name",
+    "emailLabel": "Your email",
+    "messageLabel": "Your message",
+    "errors": {
+      "nameRequired": "Your name is required",
+      "emailInvalid": "Please enter a valid email address",
+      "emailRequired": "Your email is required",
+      "messageRequired": "Your message is empty",
+      "privacyRequired": "Please accept the privacy policy."
+    },
+    "privacyBefore": "I\u0027ve read the ",
+    "privacyAfter": " and agree to the processing of my data as outlined.",
+    "submit": "Send message",
+    "submissionUnavailable": "Message sending is not available yet. Your message has not been sent.",
+
+    "submissionSending": "Your message is being processed...",
+    "submissionSimulated": "Local test successful. Your message was processed, but no email was sent.",
+    "submissionSuccess": "Your message was successfully accepted for delivery. Thank you!",
+    "submissionFailed": "Your message could not be sent. Please try again later.",
+
+    "socialsLabel": "Contact and social profiles",
+    "githubLabel": "GitHub profile",
+    "mailLabel": "Send email",
+    "linkedinLabel": "LinkedIn"
+  },
+  "legal": {
+    "back": "Back to portfolio",
+    "title": "Legal Notice",
+    "imprintTitle": "Information pursuant to § 5 DDG",
+    "imprintName": "Selim Özbek",
+    "imprintAddress": "Frankfurter Straße 75",
+    "imprintCity": "51065 Cologne, Germany",
+    "boardTitle": "Contact",
+    "boardMobile": "Mobile phone: +49 176 73869071",
+    "boardPhone": "Phone: +49 221 2223249",
+    "boardEmail": "Email: s.oezbek@soz-studio.de",
+    "acceptanceTitle": "Acceptance of terms",
+    "acceptanceBefore": "By accessing and using",
+    "acceptanceAfter": "(Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice.",
+    "scopeTitle": "Scope and ownership of the product",
+    "scopeAfterPortfolio": "has been developed as part of a student group project in a web development bootcamp at the",
+    "scopeAfterAcademy": "It has an educational purpose and is not intended for extensive personal \u0026 business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.",
+    "scopeDesignBefore": "The design of",
+    "scopeDesignMiddle": "is owned by the",
+    "scopeDesignAfter": "Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.",
+    "proprietaryTitle": "Proprietary rights",
+    "proprietaryBefore": "Aside from the design owned by",
+    "proprietaryMiddle": "we, the listed students, retain all proprietary rights in",
+    "proprietaryAfter": "including any associated copyrighted material, trademarks, and other proprietary information.",
+    "useTitle": "Use of the product",
+    "useAfterFirst": "is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of",
+    "useAfterSecond": "for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of",
+    "disclaimerTitle": "Disclaimer of warranties and limitation of liability",
+    "disclaimerAfterPortfolio": "is provided \"as is\" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the",
+    "disclaimerAfterAcademy": "be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of",
+    "indemnityTitle": "Indemnity",
+    "indemnityBefore": "You agree to indemnify, defend and hold harmless us, the listed students, the",
+    "indemnityMiddle": "and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of",
+    "indemnityAfter": "and/or your breach of this Legal Notice.",
+    "closing": "For questions or messages, please contact me at s.oezbek@soz-studio.de.",
+    "templateDate": "Date: July 26, 2025"
+  },
+  "privacy": {
     "sections": {
       "general": {
         "title": "1. General Information",
@@ -147,7 +153,7 @@
       },
       "contact": {
         "title": "5. Contact",
-        "text": "You can reach me using the contact information provided on this website.\n\nIf you send me an email, I will process the data you provide—in particular your email address, the content of the message, and, if applicable, your name—solely for the purpose of handling your inquiry and for further communication.\n\nThe legal basis is generally Article 6(1)(f) of the GDPR. To the extent that the communication serves to carry out pre-contractual measures in response to your inquiry, Article 6(1)(b) of the GDPR may apply.\n\nThe contact form displayed on the website is not currently activated for actually sending messages. In the current implementation, form submissions are not forwarded to a backend service."
+        "text": "You can reach me using the contact information provided on this website.\n\nIf you send me an email, I will process the data you provide—in particular your email address, the content of the message, and, if applicable, your name—solely for the purpose of handling your inquiry and for further communication.\n\nThe legal basis is generally Article 6(1)(f) of the GDPR. To the extent that the communication serves to carry out pre-contractual measures in response to your inquiry, Article 6(1)(b) of the GDPR may apply.\n\nThe contact form on this website processes the information you provide (name, email address, and message) for the purpose of handling your enquiry. This information is transmitted to a PHP backend, where it is validated on the server.\n\nThe contact form is currently operating in a local testing environment. Requests are processed, but no actual emails are sent. Permanent storage of contact messages in a database is not intended.\n\nBefore email delivery is activated publicly, this Privacy Policy will be updated to identify the hosting and email service providers actually used and to include any additional required information."
       },
       "storage": {
         "title": "6. Local Storage and Cookies",

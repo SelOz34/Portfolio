@@ -197,13 +197,13 @@
         }
 
         <!-- Submit -->
-        <button class="contact__submit" type="submit" [disabled]="!canSubmit">
+        <button class="contact__submit" type="submit" [disabled]="!canSubmit || isSubmitting()">
           {{ 'contact.submit' | translate }}
         </button>
 
-        @if (submissionNotice) {
+        @if (submissionNotice()) {
           <p class="contact__notice" role="status">
-            {{ submissionNotice | translate }}
+            {{ submissionNotice() | translate }}
           </p>
         }
       </form>
